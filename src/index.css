@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme{
+    --color-textColor: #841518;
+    --color-primaryColor: #6D2323;
+    --color-secondaryColor: #A2CD3A;
+    --color-darkSC: #52B947;
+    --color-darkerSC: #15A84F;
+}
+
+
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: #f3f3f3;
+}
+
+.clip-wave {
+  clip-path: ellipse(60% 100% at 0% 50%);
+}
