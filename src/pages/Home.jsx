@@ -242,7 +242,6 @@ function Home() {
           </div>
         </div>
       </section>
-    Foo
     </div>
   );
 }
