@@ -6,31 +6,31 @@ function Home() {
     <div>
       <Header></Header>
       <main className="w-full h-full overflow-hidden">
-        <div className="w-full 2xl:h-[630px] xl:h-[550px] relative flex flex-row flex-wrap ">
+        <div className="w-full 2xl:h-[630px] xl:h-[500px] relative flex flex-row flex-wrap ">
           <div className="w-[95%] h-full relative">
             <div className="w-[100%] h-full bg-gradient-to-r from-primaryColor/100 to-textColor/100 clip-wave absolute top-0 left-0 p-8">
               <div>
                 <img
-                  className="w-[150px] h-[150px]"
+                  className="2xl:w-[150px] 2xl:h-[150px] xl:w-[140px] xl:h-[140px]"
                   src="./AIMS-Kabirwala-logo.svg"
                   alt="AIMS-Kabirwala-logo"
                 />
               </div>
-              <div className=" flex flex-col px-6 py-10 gap-5">
-                <h1 className="text-[#f3f3f3] text-4xl font-bold">
+              <div className=" flex flex-col 2xl:px-6 xl:px-4 py-10 gap-5">
+                <h1 className="text-[#f3f3f3] 2xl:text-4xl xl:text-3xl font-bold">
                   Ayan Institute Of Medical Sciences Kabriwala
                 </h1>
-                <h2 className="text-secondaryColor text-xl">
+                <h2 className="text-secondaryColor 2xl:text-xl xl:text-lg">
                   Khanewal Road, Jamil Colony, Kabirwala, Khanewal, Punjab 58250
                 </h2>
-                <h2 className="text-[#f3f3f3] text-3xl ">
+                <h2 className="text-[#f3f3f3] 2xl:text-3xl xl:text-2xl ">
                   College Of Pharmacy
                 </h2>
               </div>
-              <div className="w-[30%] flex flex-flex-row justify-start px-6 gap-20 pt-10">
+              <div className="w-[30%] flex flex-flex-row justify-start px-6 2xl:gap-20 xl:gap-16 2xl:pt-10 xl:pt-2">
                 <a
                   href="#"
-                  className="border border-white px-8 py-4 text-2xl rounded-sm  text-[#f3f3f3] flex flex-row gap-2 items-center group duration-200 hover:bg-white hover:text-primaryColor "
+                  className="border border-white  2xl:px-8 2xl:py-4 xl:px-6 xl:py-2 text-nowrap  rounded-sm  text-[#f3f3f3] flex flex-row gap-2 items-center group duration-200 hover:bg-white hover:text-primaryColor 2xl:text-2xl xl:text-xl"
                 >
                   <p>Call Us</p>
                   <span>
@@ -56,7 +56,7 @@ function Home() {
                 </a>
                 <a
                   href="#"
-                  className="border border-white px-8 py-2 text-2xl rounded-sm text-[#f3f3f3] flex flex-row gap-2 items-center group duration-200 hover:bg-darkSC hover:border-primaryColor hover:text-primaryColor "
+                  className="border border-white 2xl:px-8 2xl:py-6 xl:px-6 xl:py-3 text-nowrap rounded-sm text-[#f3f3f3] flex flex-row gap-2 items-center group duration-200 hover:bg-darkSC hover:border-primaryColor hover:text-primaryColor 2xl:text-2xl xl:text-xl "
                 >
                   <p>Find Us</p>
                   <span>
@@ -99,7 +99,7 @@ function Home() {
             <div className=" absolute bg-primaryColor/10 inset-0"></div>
           </div>
         </div>
-        <div className="w-full 2xl:h-[140px] bg-primaryColor flex justify-center gap-20 items-center">
+        <div className="w-full 2xl:h-[140px] xl:h-[120px] bg-primaryColor flex justify-center gap-20 items-center">
           <div className="text-[#fff] text-center h-full w-[150px] flex flex-col items-center justify-center text-xl relative duration-200 group hover:bg-white hover:text-textColor cursor-pointer">
             <div className="flex flex-row gap-2">
               <svg
@@ -112,8 +112,8 @@ function Home() {
                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                 <g
                   id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 ></g>
                 <g id="SVGRepo_iconCarrier">
                   <path
@@ -218,10 +218,12 @@ function Home() {
           </div>
         </div>
       </main>
-      <section className="container mx-auto flex flex-row  p-20">
+      <section className="container mx-auto flex flex-row  2xl:p-20 xl:p-16">
         <div className="w-[50%] h-full ">
-          <p className="text-3xl text-textColor ">Welcome To A.I.M.S</p>
-          <article className="py-4 px-6 text-primaryColor">
+          <p className="2xl:text-3xl xl:text-2xl text-textColor ">
+            Welcome To A.I.M.S
+          </p>
+          <article className="py-4 px-6 2xl:text-md xl:text-sm text-primaryColor">
             <strong>Ayan Institute Of Medical Sciences (A . I . M . S)</strong>,
             Kabirwala is a reputable college that offers diplomas, certificates,
             and specialized courses in B-Category, Operation Theater (O.T.), and
@@ -233,12 +235,21 @@ function Home() {
             knowledge needed for a successful career in the healthcare sector.
           </article>
         </div>
-        <div className="w-[50%] h-full rounded-sm border border-primaryColor/30 text-primaryColor bg-[#EDEADE] text-center  py-4">
-          <p className=" font-bold text-3xl ">Visit A.I.M.S</p>
-          <p className="pt-5 ">At, <strong> Khanewal Road, Jamil Colony, Kabirwala, Khanewal, Punjab 58250</strong></p>
-          <span className="pt-10 ">Or Call at , <h2 className="font-bold">0300-9279148</h2></span>
+        <div className="w-[50%] h-full 2xl:text-md xl:text-sm rounded-sm border border-primaryColor/30 text-primaryColor bg-[#EDEADE] text-center  py-4">
+          <p className=" font-bold 2xl:text-3xl xl:text-2xl ">Visit A.I.M.S</p>
+          <p className="pt-5 ">
+            At,
+            <strong>
+              Khanewal Road, Jamil Colony, Kabirwala, Khanewal, Punjab 58250
+            </strong>
+          </p>
+          <span className="pt-10 ">
+            Or Call at , <h2 className="font-bold">0300-9279148</h2>
+          </span>
           <div className="mt-4">
-            <button className="border border-primaryColor bg-primaryColor text-white px-6 py-2 text-xl rounded-sm duration-200 hover:bg-white hover:text-textColor cursor-pointer">Courses &gt;&gt;</button>
+            <button className="border border-primaryColor bg-primaryColor text-white px-6 py-2 text-xl rounded-sm duration-200 hover:bg-white hover:text-textColor cursor-pointer">
+              Courses &gt;&gt;
+            </button>
           </div>
         </div>
       </section>
