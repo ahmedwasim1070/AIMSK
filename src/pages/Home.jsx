@@ -1,14 +1,15 @@
 import React from "react";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 function Home() {
   return (
     <div>
       <Header></Header>
       <main className="w-full h-full overflow-hidden">
-        <div className="w-full 2xl:h-[630px] xl:h-[500px] relative flex flex-row flex-wrap ">
+        <div className="w-full 2xl:h-[600px] xl:h-[500px] relative flex flex-row flex-wrap ">
           <div className="w-[95%] h-full relative">
-            <div className="w-[100%] h-full bg-gradient-to-r from-primaryColor/100 to-textColor/100 clip-wave absolute top-0 left-0 p-8">
+            <div className="w-[100%] h-full bg-primaryColor clip-wave absolute top-0 left-0 p-8">
               <div>
                 <img
                   className="2xl:w-[150px] 2xl:h-[150px] xl:w-[140px] xl:h-[140px]"
@@ -21,7 +22,8 @@ function Home() {
                   Ayan Institute Of Medical Sciences Kabriwala
                 </h1>
                 <h2 className="text-secondaryColor 2xl:text-xl xl:text-lg">
-                  Khanewal Road, Jamil Colony, Kabirwala, Khanewal, Punjab 58250
+                  Jameel Colony Neya adda , khanewal road Kabirwala, Kabirwala,
+                  Pakistan
                 </h2>
                 <h2 className="text-[#f3f3f3] 2xl:text-3xl xl:text-2xl ">
                   College Of Pharmacy
@@ -240,7 +242,8 @@ function Home() {
           <p className="pt-5 ">
             At,
             <strong>
-              Khanewal Road, Jamil Colony, Kabirwala, Khanewal, Punjab 58250
+              Jameel Colony Neya adda , khanewal road Kabirwala, Kabirwala,
+              Pakistan
             </strong>
           </p>
           <span className="pt-10 ">
@@ -253,6 +256,116 @@ function Home() {
           </div>
         </div>
       </section>
+      <section className="bg-primaryColor">
+        <div className="container mx-auto flex flex-row items-center justify-evenly gap-20 py-20 my-2">
+          <div className="px-10 py-8 rounded-sm border border-primaryColor/30 bg-[#EDEADE]">
+            <p className="text-3xl font-bold text-primaryColor ">We Offer : </p>
+            <p className="mx-10 my-4 text-textColor">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur cumque, veniam ratione deserunt quod quidem odio
+              beatae soluta eaque voluptatum! Consequatur harum magni nemo
+              suscipit et, ut similique totam repellendus, quod perspiciatis
+              nostrum iste ipsa natus libero aspernatur quam, laboriosam
+              perferendis nam dicta blanditiis atque. Ex consequatur praesentium
+              soluta inventore, voluptate minima accusamus tempore vero aperiam
+              neque vel doloribus iste aspernatur obcaecati voluptates,
+            </p>
+          </div>
+          <div className="grid grid-cols-2 gap-2 grid-rows-2 rounded-sm border border-[#edeade]/40 p-2">
+            <img
+              className="w-[1000px] rounded-sm border border-[#edeade]/60"
+              src="./AIMS-Kabirwala-Institute.webp"
+              alt="Main building"
+            />
+            <img
+              className="w-[1000px] rounded-sm border border-[#edeade]/60"
+              src="./AIMS-Kabirwala-Institute.webp"
+              alt="Main building"
+            />
+            <img
+              className="w-[1000px] rounded-sm border border-[#edeade]/60"
+              src="./AIMS-Kabirwala-Institute.webp"
+              alt="Main building"
+            />
+            <img
+              className="w-[1000px] rounded-sm border border-[#edeade]/60"
+              src="./AIMS-Kabirwala-Institute.webp"
+              alt="Main building"
+            />
+          </div>
+        </div>
+      </section>
+      <section className="my-10">
+        <p className="text-center text-5xl font-bold text-textColor my-4">
+          Courses
+        </p>
+        <div className="flex flex-row gap-x-2"></div>
+      </section>
+      <section>
+        <div className="container mx-auto flex flex-row items-center justify-center">
+          <div className="p-10 bg-[#edeade]">
+            <p className="text-textColor text-4xl">Registered By:</p>
+            <div className="mx-16 my-10 flex items-center justify-center flex-col gap-y-6">
+              <img
+                className="w-[150px] h-[150px]"
+                src="./Punjab-Pharmacy-Council-Logo.svg"
+                alt="punjab-pharmacy-council-logo"
+              />
+              <h3 className="text-center text-3xl text-primaryColor">
+                Punjab Pharmacy Council
+              </h3>
+            </div>
+          </div>
+          <div className=" bg-primaryColor rounded-sm py-10 px-24 flex flex-col gap-y-4 justify-center item-center text-center gap-10">
+            <div className="flex flex-row items-center gap-x-4 justify-center text-textColor">
+              <div className="text-center p-10 rounded-sm bg-[#edeade]">
+                <p className="text-2xl">80</p>
+                <p className="text-xl">Morning</p>
+              </div>
+              <p className="text-4xl font-bolder text-white">+</p>
+              <div className="text-center p-10 rounded-sm bg-[#edeade]">
+                <p className="text-2xl">80</p>
+                <p className="text-xl">Evening</p>
+              </div>
+            </div>
+            <div className="mx-auto flex flex-row p-10 bg-white rounded-sm text-textColor items-end gap-2">
+              <svg
+                className=" stroke-primaryColor fill-primaryColor mx-4"
+                height="60px"
+                width="60px"
+                id="_x32_"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 512 512"
+                xmlSpace="preserve"
+              >
+                <g id="SVGRepo_bgCarrier" strokeWidth={0} />
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <g id="SVGRepo_iconCarrier">
+                  <style type="text/css"></style>
+                  <g>
+                    <path
+                      className="st0"
+                      d="M505.837,180.418L279.265,76.124c-7.349-3.385-15.177-5.093-23.265-5.093c-8.088,0-15.914,1.708-23.265,5.093 L6.163,180.418C2.418,182.149,0,185.922,0,190.045s2.418,7.896,6.163,9.627l226.572,104.294c7.349,3.385,15.177,5.101,23.265,5.101 c8.088,0,15.916-1.716,23.267-5.101l178.812-82.306v82.881c-7.096,0.8-12.63,6.84-12.63,14.138c0,6.359,4.208,11.864,10.206,13.618 l-12.092,79.791h55.676l-12.09-79.791c5.996-1.754,10.204-7.259,10.204-13.618c0-7.298-5.534-13.338-12.63-14.138v-95.148 l21.116-9.721c3.744-1.731,6.163-5.504,6.163-9.627S509.582,182.149,505.837,180.418z"
+                    />
+                    <path
+                      className="st0"
+                      d="M256,346.831c-11.246,0-22.143-2.391-32.386-7.104L112.793,288.71v101.638 c0,22.314,67.426,50.621,143.207,50.621c75.782,0,143.209-28.308,143.209-50.621V288.71l-110.827,51.017 C278.145,344.44,267.25,346.831,256,346.831z"
+                    />
+                  </g>
+                </g>
+              </svg>
+              <p className="text-4xl font-bold">160</p>
+              <p className="text-sm font-bolder">TOTAL</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <Footer />
     </div>
   );
 }
