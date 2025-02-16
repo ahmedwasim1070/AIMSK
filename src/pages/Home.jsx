@@ -1,8 +1,45 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 function Home() {
+  const [courses, setCourses] = useState([
+    {
+      courseName: "Lab Technician",
+      courseDescription: "",
+      coursePosition: "left-[0%]",
+      courseScale: "scale-100",
+      courseZ: "z-0"
+    },
+    {
+      courseName: "Dispenser",
+      courseDescription: "",
+      coursePosition: "left-[22%]",
+      courseScale: "scale-100",
+      courseZ: "z-0"
+    },
+    {
+      courseName: "Pharmacy Technician (B Category)",
+      courseDescription: "",
+      coursePosition: "left-[44%]",
+      courseScale: "scale-110",
+      courseZ: "z-10"
+    },
+    {
+      courseName: "Operation Theater Technician",
+      courseDescription: "",
+      coursePosition: "left-[66%]",
+      courseScale: "scale-100",
+      courseZ: "z-0"
+    },
+    {
+      courseName: "Radiographic",
+      courseDescription: "",
+      coursePosition: "left-[88%]",
+      courseScale: "scale-100",
+      courseZ: "z-0"
+    },
+  ]);
   return (
     <div>
       <Header></Header>
@@ -295,11 +332,25 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="my-10">
-        <p className="text-center text-5xl font-bold text-textColor my-4">
+      <section className="my-12">
+        <p className="text-center text-5xl font-bold text-textColor my-8">
           Courses
         </p>
-        <div className="flex flex-row gap-x-2"></div>
+        <div className="flex flex-row items-center justify-center text-white">
+          <button className="bg-primaryColor p-6 font-bold text-3xl  ">
+            &lt;
+          </button>
+          <div className="w-[1000px] h-[600px] bg-primaryColor flex flex-row items-center justify-center rounded-sm gap-x-5 flex-nowrap text-black overflow-x-scroll">
+            {courses.map((idx,course)=>(
+              <div key={idx} className={`w-[400px] transition-all duration-300 h-[550px] bg-[#edeade] flex-none absolute ${courses[course].coursePosition} ${courses[course].courseScale} ${courses[course].courseZ}`}>
+                {courses[course].courseName}
+              </div>
+            ))}
+          </div>
+          <button className="bg-primaryColor p-6 font-bold text-3xl  ">
+            &gt;
+          </button>
+        </div>
       </section>
       <section>
         <div className="container mx-auto flex flex-row items-center justify-center">
@@ -362,6 +413,7 @@ function Home() {
               <p className="text-4xl font-bold">160</p>
               <p className="text-sm font-bolder">TOTAL</p>
             </div>
+            <p className="text-3xl text-white">Seats</p>
           </div>
         </div>
       </section>
