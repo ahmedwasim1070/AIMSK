@@ -7,39 +7,52 @@ function Home() {
     {
       courseName: "Lab Technician",
       courseDescription: "",
-      coursePosition: "left-[0%]",
-      courseScale: "scale-100",
-      courseZ: "z-0"
+      coursePosition: "0%",
+      courseScale: "100",
+      courseZ: "0",
     },
     {
       courseName: "Dispenser",
       courseDescription: "",
-      coursePosition: "left-[22%]",
-      courseScale: "scale-100",
-      courseZ: "z-0"
+      coursePosition: "22%",
+      courseScale: "100",
+      courseZ: "0",
     },
     {
       courseName: "Pharmacy Technician (B Category)",
       courseDescription: "",
-      coursePosition: "left-[44%]",
-      courseScale: "scale-110",
-      courseZ: "z-10"
+      coursePosition: "44%",
+      courseScale: "110",
+      courseZ: "10",
     },
     {
       courseName: "Operation Theater Technician",
       courseDescription: "",
-      coursePosition: "left-[66%]",
-      courseScale: "scale-100",
-      courseZ: "z-0"
+      coursePosition: "66%",
+      courseScale: "100",
+      courseZ: "0",
     },
     {
       courseName: "Radiographic",
       courseDescription: "",
-      coursePosition: "left-[88%]",
-      courseScale: "scale-100",
-      courseZ: "z-0"
+      coursePosition: "88%",
+      courseScale: "100",
+      courseZ: "0",
     },
   ]);
+  const handleNext = () => {
+    setCourses((prevCourses) =>
+      prevCourses.map((course) => ({
+        ...course,
+        coursePosition:
+          parseFloat(course.coursePosition) < 88 ? parseFloat(course.coursePosition) + 22 + "%" : 0 + "%",
+        courseZ:
+          parseFloat(course.coursePosition) != 44 ? "-10":"10",
+        courseScale:
+          !parseFloat(course.coursePosition) !=44 ? "100": "110",
+      }))
+    );
+  };
   return (
     <div>
       <Header></Header>
@@ -340,14 +353,24 @@ function Home() {
           <button className="bg-primaryColor p-6 font-bold text-3xl  ">
             &lt;
           </button>
-          <div className="w-[1000px] h-[600px] bg-primaryColor flex flex-row items-center justify-center rounded-sm gap-x-5 flex-nowrap text-black overflow-x-scroll">
-            {courses.map((idx,course)=>(
-              <div key={idx} className={`w-[400px] transition-all duration-300 h-[550px] bg-[#edeade] flex-none absolute ${courses[course].coursePosition} ${courses[course].courseScale} ${courses[course].courseZ}`}>
+          <div className="w-[1000px] h-[600px] bg-primaryColor  flex flex-row items-center justify-center rounded-sm gap-x-5 flex-nowrap text-black overflow-hidden relative">
+            {courses.map((idx, course) => (
+              <div
+                key={course}
+                className={`w-[400px] transition-all duration-300 h-[550px] bg-[#edeade] flex-none absolute left-[${
+                  courses[course].coursePosition
+                }] z-${courses[course].courseZ} scale-${
+                  courses[course].courseScale
+                }`}
+              >
                 {courses[course].courseName}
               </div>
             ))}
           </div>
-          <button className="bg-primaryColor p-6 font-bold text-3xl  ">
+          <button
+            className="bg-primaryColor p-6 font-bold text-3xl"
+            onClick={handleNext}
+          >
             &gt;
           </button>
         </div>
@@ -355,7 +378,7 @@ function Home() {
       <section>
         <div className="container mx-auto flex flex-row items-center justify-center">
           <div className="p-10 bg-[#edeade]">
-            <p className="text-textColor text-4xl">Registered By:</p>
+            <p className="text-textColor text-4xl">Registered By me:</p>
             <div className="mx-16 my-10 flex items-center justify-center flex-col gap-y-6">
               <img
                 className="w-[150px] h-[150px]"
