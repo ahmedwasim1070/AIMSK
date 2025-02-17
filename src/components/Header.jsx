@@ -2,7 +2,7 @@ import React from "react";
 
 function Header() {
   return (
-    <header className=" sticky">
+    <header className="sticky">
       <nav className="w-full 2xl:h-[120px] xl:h-[110px]  flex flex-row items-center p-5">
         <div className="w-[50%] h-full flex flex-row items-center gap-4">
           <div>

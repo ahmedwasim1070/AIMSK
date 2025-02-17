@@ -8,49 +8,76 @@ function Home() {
       courseName: "Lab Technician",
       courseDescription: "",
       coursePosition: "0%",
-      courseScale: "100",
+      courseScale: "85",
       courseZ: "0",
     },
     {
       courseName: "Dispenser",
       courseDescription: "",
-      coursePosition: "22%",
+      coursePosition: "20%",
       courseScale: "100",
       courseZ: "0",
     },
     {
       courseName: "Pharmacy Technician (B Category)",
       courseDescription: "",
-      coursePosition: "44%",
+      coursePosition: "40%",
       courseScale: "110",
       courseZ: "10",
     },
     {
       courseName: "Operation Theater Technician",
       courseDescription: "",
-      coursePosition: "66%",
+      coursePosition: "60%",
       courseScale: "100",
       courseZ: "0",
     },
     {
       courseName: "Radiographic",
       courseDescription: "",
-      coursePosition: "88%",
-      courseScale: "100",
+      coursePosition: "80%",
+      courseScale: "85",
       courseZ: "0",
     },
   ]);
   const handleNext = () => {
     setCourses((prevCourses) =>
-      prevCourses.map((course) => ({
-        ...course,
-        coursePosition:
-          parseFloat(course.coursePosition) < 88 ? parseFloat(course.coursePosition) + 22 + "%" : 0 + "%",
-        courseZ:
-          parseFloat(course.coursePosition) != 44 ? "-10":"10",
-        courseScale:
-          !parseFloat(course.coursePosition) !=44 ? "100": "110",
-      }))
+      prevCourses.map((course) => {
+        const currentPosition = parseFloat(course.coursePosition);
+        const newPosition = currentPosition < 80 ? currentPosition + 20 : 0;
+        let newScale = "100";
+        if (newPosition === 0 || newPosition === 80) {
+          newScale = "85";
+        } else if (newPosition === 40) {
+          newScale = "110";
+        }
+        return {
+          ...course,
+          coursePosition: `${newPosition}%`,
+          courseScale: newScale,
+          courseZ: newPosition === 40 ? "10" : "0",
+        };
+      })
+    );
+  };
+  const handlePrevious = () => {
+    setCourses((prevCourses) =>
+      prevCourses.map((course) => {
+        const currentPosition = parseFloat(course.coursePosition);
+        const newPosition = currentPosition > 0 ? currentPosition - 20 : 88;
+        let newScale = "100";
+        if (newPosition === 0 || newPosition === 80) {
+          newScale = "85";
+        } else if (newPosition === 40) {
+          newScale = "110";
+        }
+        return {
+          ...course,
+          coursePosition: `${newPosition}%`,
+          courseScale: newScale,
+          courseZ: newPosition === 40 ? "10" : "0",
+        };
+      })
     );
   };
   return (
@@ -350,20 +377,24 @@ function Home() {
           Courses
         </p>
         <div className="flex flex-row items-center justify-center text-white">
-          <button className="bg-primaryColor p-6 font-bold text-3xl  ">
+          <button
+            onClick={handlePrevious}
+            className="bg-primaryColor p-6 font-bold text-3xl  "
+          >
             &lt;
           </button>
-          <div className="w-[1000px] h-[600px] bg-primaryColor  flex flex-row items-center justify-center rounded-sm gap-x-5 flex-nowrap text-black overflow-hidden relative">
-            {courses.map((idx, course) => (
+          <div className="w-[1800px] h-[600px] p-10 flex flex-row justify-center items-center bg-primaryColor rounded-sm text-black overflow-hidden relative">
+            {courses.map((course, index) => (
               <div
-                key={course}
-                className={`w-[400px] transition-all duration-300 h-[550px] bg-[#edeade] flex-none absolute left-[${
-                  courses[course].coursePosition
-                }] z-${courses[course].courseZ} scale-${
-                  courses[course].courseScale
-                }`}
+                key={index}
+                className={`w-[300px] h-[500px] absolute bg-[#edeade]  transition-all duration-300 rounded-sm`}
+                style={{
+                  left: course.coursePosition,
+                  transform: `scale(${parseInt(course.courseScale) / 100})`,
+                  zIndex: course.coursez,
+                }}
               >
-                {courses[course].courseName}
+                {course.courseName}
               </div>
             ))}
           </div>
@@ -378,7 +409,7 @@ function Home() {
       <section>
         <div className="container mx-auto flex flex-row items-center justify-center">
           <div className="p-10 bg-[#edeade]">
-            <p className="text-textColor text-4xl">Registered By me:</p>
+            <p className="text-textColor text-4xl">Registered By:</p>
             <div className="mx-16 my-10 flex items-center justify-center flex-col gap-y-6">
               <img
                 className="w-[150px] h-[150px]"
