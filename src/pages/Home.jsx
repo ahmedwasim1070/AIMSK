@@ -289,27 +289,18 @@ function Home() {
             knowledge needed for a successful career in the healthcare sector.
           </article>
         </div>
-        <div className="w-[50%] h-full 2xl:text-md xl:text-sm rounded-sm border border-primaryColor/30 text-primaryColor bg-[#EDEADE] text-center  py-4">
-          <p className=" font-bold 2xl:text-3xl xl:text-2xl ">Visit A.I.M.S</p>
-          <p className="pt-5 ">
-            At,
-            <strong>
-              Jameel Colony Neya adda , khanewal road Kabirwala, Kabirwala,
-              Pakistan
-            </strong>
-          </p>
-          <span className="pt-10 ">
-            Or Call at , <h2 className="font-bold">0300-9279148</h2>
-          </span>
-          <div className="mt-4">
-            <button className="border border-primaryColor bg-primaryColor text-white px-6 py-2 text-xl rounded-sm duration-200 hover:bg-white hover:text-textColor cursor-pointer">
-              Courses &gt;&gt;
-            </button>
-          </div>
+        <div className="w-[50%] bg-[#edeade]  rounded-sm border border-primaryColor/40 flex flex-col items-center justify-center gap-y-2 text-textColor">
+          <p>Registered By</p>
+          <img
+            className="w-24 h-24"
+            src="Punjab-Pharmacy-Council-Logo.svg"
+            alt="Punjab Pharmacy Council"
+          />
+          <p>Punjab Pharmacy Council</p>
         </div>
       </section>
       <section className="bg-primaryColor">
-        <div className="container mx-auto flex flex-row items-center justify-evenly gap-20 py-20 my-2">
+        <div className="container mx-auto flex flex-row items-center justify-evenly gap-20 py-20 my-2 2xl:px-0 xl:px-6">
           <div className="px-10 py-8 rounded-sm border border-primaryColor/30 bg-white">
             <p className="text-3xl text-primaryColor ">We Offer : </p>
             <p className="mx-10 my-4 text-textColor">
@@ -347,78 +338,16 @@ function Home() {
           </div>
         </div>
       </section>
-      <section>
-        <div className="container mx-auto flex flex-row items-center justify-center">
-          <div className="p-10 bg-[#edeade]">
-            <p className="text-textColor text-4xl">Registered By:</p>
-            <div className="mx-16 my-10 flex items-center justify-center flex-col gap-y-6">
-              <img
-                className="w-[150px] h-[150px]"
-                src="./Punjab-Pharmacy-Council-Logo.svg"
-                alt="punjab-pharmacy-council-logo"
-              />
-              <h3 className="text-center text-3xl text-primaryColor">
-                Punjab Pharmacy Council
-              </h3>
-            </div>
-          </div>
-          <div className=" bg-primaryColor rounded-sm py-10 px-24 flex flex-col gap-y-4 justify-center item-center text-center gap-10">
-            <div className="flex flex-row items-center gap-x-4 justify-center text-textColor">
-              <div className="text-center p-10 rounded-sm bg-[#edeade]">
-                <p className="text-2xl">80</p>
-                <p className="text-xl">Morning</p>
-              </div>
-              <p className="text-4xl font-bolder text-white">+</p>
-              <div className="text-center p-10 rounded-sm bg-[#edeade]">
-                <p className="text-2xl">80</p>
-                <p className="text-xl">Evening</p>
-              </div>
-            </div>
-            <div className="mx-auto flex flex-row p-10 bg-white rounded-sm text-textColor items-end gap-2">
-              <svg
-                className=" stroke-primaryColor fill-primaryColor mx-4"
-                height="60px"
-                width="60px"
-                id="_x32_"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlnsXlink="http://www.w3.org/1999/xlink"
-                viewBox="0 0 512 512"
-                xmlSpace="preserve"
-              >
-                <g id="SVGRepo_bgCarrier" strokeWidth={0} />
-                <g
-                  id="SVGRepo_tracerCarrier"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <g id="SVGRepo_iconCarrier">
-                  <style type="text/css"></style>
-                  <g>
-                    <path
-                      className="st0"
-                      d="M505.837,180.418L279.265,76.124c-7.349-3.385-15.177-5.093-23.265-5.093c-8.088,0-15.914,1.708-23.265,5.093 L6.163,180.418C2.418,182.149,0,185.922,0,190.045s2.418,7.896,6.163,9.627l226.572,104.294c7.349,3.385,15.177,5.101,23.265,5.101 c8.088,0,15.916-1.716,23.267-5.101l178.812-82.306v82.881c-7.096,0.8-12.63,6.84-12.63,14.138c0,6.359,4.208,11.864,10.206,13.618 l-12.092,79.791h55.676l-12.09-79.791c5.996-1.754,10.204-7.259,10.204-13.618c0-7.298-5.534-13.338-12.63-14.138v-95.148 l21.116-9.721c3.744-1.731,6.163-5.504,6.163-9.627S509.582,182.149,505.837,180.418z"
-                    />
-                    <path
-                      className="st0"
-                      d="M256,346.831c-11.246,0-22.143-2.391-32.386-7.104L112.793,288.71v101.638 c0,22.314,67.426,50.621,143.207,50.621c75.782,0,143.209-28.308,143.209-50.621V288.71l-110.827,51.017 C278.145,344.44,267.25,346.831,256,346.831z"
-                    />
-                  </g>
-                </g>
-              </svg>
-              <p className="text-4xl font-bold">160</p>
-              <p className="text-sm font-bolder">TOTAL</p>
-            </div>
-            <p className="text-3xl text-white">Seats</p>
-          </div>
-        </div>
-      </section>
       <section className="my-12">
         <p className="text-center text-5xl font-bold text-textColor my-8">
           Our Featured Courses
         </p>
-        <div className="container mx-auto flex justify-center gap-x-10 gap-y-10 flex-wrap flex-none p-3 place-items-center">
+        <div className="container mx-auto flex justify-center  gap-x-10 gap-y-10 flex-wrap flex-none p-3 place-items-center">
           {courses.map((course, index) => (
-            <div key={index} className="relative shadow-2xl w-[420px] cursor-pointer duration-700 hover:scale-105">
+            <div
+              key={index}
+              className="relative shadow-2xl 2xl:w-[420px] xl:w-[380px] cursor-pointer duration-700 hover:scale-105"
+            >
               <div>
                 <img
                   className="rounded-sm"
@@ -434,7 +363,9 @@ function Home() {
                 {course.courseName}
               </div>
               <div className="px-2 py-4">
-                <p className="mx-1 my-4 text-textColor text-center">{course.courseDescription}</p>
+                <p className="mx-1 my-4 text-textColor text-center">
+                  {course.courseDescription}
+                </p>
               </div>
             </div>
           ))}
