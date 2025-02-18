@@ -5,81 +5,56 @@ import Footer from "../components/Footer";
 function Home() {
   const [courses, setCourses] = useState([
     {
+      courseImg: "AIMs-Kabirwala-C01.webp",
+      courseImgAlt: "Lab Technician",
       courseName: "Lab Technician",
-      courseDescription: "",
+      courseDescription:
+        "A Lab Technician course focuses on medical laboratory procedures and diagnostic testing. Students learn about hematology, microbiology, biochemistry, and pathology, gaining the skills to analyze samples and assist doctors in diagnosing diseases. Lab technicians play a crucial role in healthcare and can work in hospitals, diagnostic labs, and research facilities.",
       coursePosition: "0%",
       courseScale: "85",
       courseZ: "0",
     },
     {
+      courseImg: "AIMs-Kabirwala-C02.webp",
+      courseImgAlt: "Dispenser",
       courseName: "Dispenser",
-      courseDescription: "",
+      courseDescription:
+        "The Dispenser course trains students in handling, storing, and dispensing medicines under a pharmacist's supervision. It covers pharmaceutical calculations, drug interactions, and basic patient counseling. Dispensers are responsible for managing prescriptions and ensuring accurate medication distribution. Graduates of this course can work in pharmacies, hospitals, and healthcare centers.",
       coursePosition: "20%",
       courseScale: "100",
       courseZ: "0",
     },
     {
-      courseName: "Pharmacy Technician (B Category)",
-      courseDescription: "",
+      courseImg: "AIMs-Kabirwala-C03.webp",
+      courseImgAlt: "Pharmacy Technician , B-Category",
+      courseName: "Pharmacy Technician",
+      courseDescription:
+        "A Pharmacy Technician course provides more in-depth training in pharmaceutical sciences, drug formulations, and medication safety. Pharmacy technicians assist pharmacists by preparing prescriptions, managing inventory, and ensuring patients receive the correct medications. They play a vital role in both hospital and retail pharmacy settings.",
       coursePosition: "40%",
       courseScale: "110",
       courseZ: "10",
     },
     {
+      courseImg: "AIMs-Kabirwala-C04.webp",
+      courseImgAlt: "Operation Therater Technician",
       courseName: "Operation Theater Technician",
-      courseDescription: "",
+      courseDescription:
+        "The Operation Theater Technician course focuses on preparing and maintaining operation theaters, sterilizing surgical instruments, and assisting surgeons during medical procedures. Students learn about anesthesia basics, surgical protocols, and emergency handling. OT technicians work in hospitals and surgical centers, ensuring that operating rooms function smoothly.",
       coursePosition: "60%",
       courseScale: "100",
       courseZ: "0",
     },
     {
+      courseImg: "AIMs-Kabirwala-C05.webp",
+      courseImgAlt: "Radiographic",
       courseName: "Radiographic",
-      courseDescription: "",
+      courseDescription:
+        "A Radiographic course trains students in using medical imaging technologies such as X-rays, MRI, and CT scans. It emphasizes radiation safety, image processing, and patient positioning, enabling graduates to assist radiologists in diagnosing diseases. Radiology technicians typically work in hospitals, diagnostic imaging centers, and specialized radiology departments.",
       coursePosition: "80%",
       courseScale: "85",
       courseZ: "0",
     },
   ]);
-  const handleNext = () => {
-    setCourses((prevCourses) =>
-      prevCourses.map((course) => {
-        const currentPosition = parseFloat(course.coursePosition);
-        const newPosition = currentPosition < 80 ? currentPosition + 20 : 0;
-        let newScale = "100";
-        if (newPosition === 0 || newPosition === 80) {
-          newScale = "85";
-        } else if (newPosition === 40) {
-          newScale = "110";
-        }
-        return {
-          ...course,
-          coursePosition: `${newPosition}%`,
-          courseScale: newScale,
-          courseZ: newPosition === 40 ? "10" : "0",
-        };
-      })
-    );
-  };
-  const handlePrevious = () => {
-    setCourses((prevCourses) =>
-      prevCourses.map((course) => {
-        const currentPosition = parseFloat(course.coursePosition);
-        const newPosition = currentPosition > 0 ? currentPosition - 20 : 88;
-        let newScale = "100";
-        if (newPosition === 0 || newPosition === 80) {
-          newScale = "85";
-        } else if (newPosition === 40) {
-          newScale = "110";
-        }
-        return {
-          ...course,
-          coursePosition: `${newPosition}%`,
-          courseScale: newScale,
-          courseZ: newPosition === 40 ? "10" : "0",
-        };
-      })
-    );
-  };
   return (
     <div>
       <Header></Header>
@@ -335,8 +310,8 @@ function Home() {
       </section>
       <section className="bg-primaryColor">
         <div className="container mx-auto flex flex-row items-center justify-evenly gap-20 py-20 my-2">
-          <div className="px-10 py-8 rounded-sm border border-primaryColor/30 bg-[#EDEADE]">
-            <p className="text-3xl font-bold text-primaryColor ">We Offer : </p>
+          <div className="px-10 py-8 rounded-sm border border-primaryColor/30 bg-white">
+            <p className="text-3xl text-primaryColor ">We Offer : </p>
             <p className="mx-10 my-4 text-textColor">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Consequatur cumque, veniam ratione deserunt quod quidem odio
@@ -370,40 +345,6 @@ function Home() {
               alt="Main building"
             />
           </div>
-        </div>
-      </section>
-      <section className="my-12">
-        <p className="text-center text-5xl font-bold text-textColor my-8">
-          Courses
-        </p>
-        <div className="flex flex-row items-center justify-center text-white">
-          <button
-            onClick={handlePrevious}
-            className="bg-primaryColor p-6 font-bold text-3xl  "
-          >
-            &lt;
-          </button>
-          <div className="w-[1800px] h-[600px] p-10 flex flex-row justify-center items-center bg-primaryColor rounded-sm text-black overflow-hidden relative">
-            {courses.map((course, index) => (
-              <div
-                key={index}
-                className={`w-[300px] h-[500px] absolute bg-[#edeade]  transition-all duration-300 rounded-sm`}
-                style={{
-                  left: course.coursePosition,
-                  transform: `scale(${parseInt(course.courseScale) / 100})`,
-                  zIndex: course.coursez,
-                }}
-              >
-                {course.courseName}
-              </div>
-            ))}
-          </div>
-          <button
-            className="bg-primaryColor p-6 font-bold text-3xl"
-            onClick={handleNext}
-          >
-            &gt;
-          </button>
         </div>
       </section>
       <section>
@@ -469,6 +410,34 @@ function Home() {
             </div>
             <p className="text-3xl text-white">Seats</p>
           </div>
+        </div>
+      </section>
+      <section className="my-12">
+        <p className="text-center text-5xl font-bold text-textColor my-8">
+          Our Featured Courses
+        </p>
+        <div className="container mx-auto flex justify-center gap-x-10 gap-y-10 flex-wrap flex-none p-3 place-items-center">
+          {courses.map((course, index) => (
+            <div key={index} className="relative shadow-2xl w-[420px] cursor-pointer duration-700 hover:scale-105">
+              <div>
+                <img
+                  className="rounded-sm"
+                  src={`${course.courseImg}`}
+                  alt={`${course.courseImgAlt}`}
+                />
+                <p className="bg-primaryColor px-10 py-2 absolute rounded-sm text-white font-bold top-0 ">
+                  2-Years
+                </p>
+                <div className=" absolute inset-0 bg-[#edeade]/5"></div>
+              </div>
+              <div className="text-center py-2 text-white text-2xl bg-primaryColor">
+                {course.courseName}
+              </div>
+              <div className="px-2 py-4">
+                <p className="mx-1 my-4 text-textColor text-center">{course.courseDescription}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
       <Footer />
