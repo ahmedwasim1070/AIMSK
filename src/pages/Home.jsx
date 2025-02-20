@@ -55,6 +55,20 @@ function Home() {
       courseZ: "0",
     },
   ]);
+  const [institutePic, setInstitutePics] = useState([
+    {
+      img: "AIMS-Pic-01.webp",
+    },
+    {
+      img: "AIMS-Pic-02.webp",
+    },
+    {
+      img: "AIMS-Pic-03.webp",
+    },
+    {
+      img: "AIMS-Pic-04.webp",
+    },
+  ]);
   return (
     <div>
       <Header></Header>
@@ -300,41 +314,25 @@ function Home() {
         </div>
       </section>
       <section className="bg-primaryColor">
-        <div className="container mx-auto flex flex-row items-center justify-evenly gap-20 py-20 my-2 2xl:px-0 xl:px-6">
-          <div className="px-10 py-8 rounded-sm border border-primaryColor/30 bg-white">
-            <p className="text-3xl text-primaryColor ">We Offer : </p>
-            <p className="mx-10 my-4 text-textColor">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequatur cumque, veniam ratione deserunt quod quidem odio
-              beatae soluta eaque voluptatum! Consequatur harum magni nemo
-              suscipit et, ut similique totam repellendus, quod perspiciatis
-              nostrum iste ipsa natus libero aspernatur quam, laboriosam
-              perferendis nam dicta blanditiis atque. Ex consequatur praesentium
-              soluta inventore, voluptate minima accusamus tempore vero aperiam
-              neque vel doloribus iste aspernatur obcaecati voluptates,
+        <div className="container mx-auto p-10 flex flex-row justify-center items-center gap-x-4 ">
+          <div className="w-[50%] bg-white p-8 rounded-sm text-textColor">
+            <p className="text-3xl">We Offer : </p>
+            <p className="m-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+              nulla asperiores, beatae sunt sequi ratione incidunt. Incidunt
+              reiciendis accusamus autem, dolorem earum non excepturi
+              repellendus nostrum aspernatur molestias ratione? Magni.
             </p>
           </div>
-          <div className="grid grid-cols-2 gap-2 grid-rows-2 rounded-sm border border-[#edeade]/40 p-2">
-            <img
-              className="w-[1000px] rounded-sm border border-[#edeade]/60"
-              src="./AIMS-Kabirwala-Institute.webp"
-              alt="Main building"
-            />
-            <img
-              className="w-[1000px] rounded-sm border border-[#edeade]/60"
-              src="./AIMS-Kabirwala-Institute.webp"
-              alt="Main building"
-            />
-            <img
-              className="w-[1000px] rounded-sm border border-[#edeade]/60"
-              src="./AIMS-Kabirwala-Institute.webp"
-              alt="Main building"
-            />
-            <img
-              className="w-[1000px] rounded-sm border border-[#edeade]/60"
-              src="./AIMS-Kabirwala-Institute.webp"
-              alt="Main building"
-            />
+          <div className="w-[50%] border">
+            {institutePic.map((pic, index) => (
+              <div>
+                <img
+                  src={`${pic.img}`}
+                  alt="Ayan Institute Of Medical Sciences Kabirwala Pics"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>
