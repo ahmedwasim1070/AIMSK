@@ -6,7 +6,7 @@ function Footer() {
       <section className="py-10 flex flex-row items-center justify-around container mx-auto 2xl:flex-nowrap xl:flex-nowrap">
         <div className="underline text-[#f3f3f3]">
           <nav>
-            <ul className="flex flex-col gap-y-4">
+            <ul className="flex flex-col gap-y-4 2xl:text-md xl:text-md lg:text-sm">
               <li>
                 <a className="hover:text-secondaryColor" href="#">
                   Feedback
@@ -128,7 +128,7 @@ function Footer() {
               src="./AIMS-Kabirwala-logo.svg"
               alt="Logo"
             />
-            <h5 className="text-xl text-nowrap">
+            <h5 className="2xl:text-xl xl:text-xl lg:text-lg text-nowrap">
               Ayan Institute Of Medical Sciences , Kabriwala
             </h5>
           </div>

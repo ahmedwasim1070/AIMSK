@@ -3,34 +3,32 @@ import React from "react";
 function Header() {
   return (
     <header className="sticky">
-      <nav className="w-full 2xl:h-[120px] xl:h-[110px]  flex flex-row items-center p-5">
+      <nav className="w-full 2xl:h-[120px] xl:h-[110px] lg:h-[110px]  flex flex-row items-center p-5">
         <div className="w-[50%] h-full flex flex-row items-center gap-4">
           <div>
             <img
-              className="2xl:w-[100px] 2xl:h-[100px] xl:w-[90px] xl:h-[90px]"
+              className="2xl:w-[100px] 2xl:h-[100px] xl:w-[90px] xl:h-[90px] lg:w-[90px] lg:h-[90px]"
               src="./AIMS-Kabirwala-logo.svg"
               alt="AIMS Logo"
             />
           </div>
           <div>
-            <h1 className="text-textColor 2xl:text-3xl xl:text-2xl">
+            <h1 className="text-textColor 2xl:text-3xl xl:text-2xl lg:text-2xl">
               Ayan Institute Of Medical Sciences Kabirwala
             </h1>
           </div>
         </div>
         <div className="w-[50%] h-full flex flex-row items-center justify-end">
           <a
-            className="flex flex-row items-center bg-primaryColor 2xl:py-3 xl:py-2 2xl:px-6 xl:px-5 rounded-sm duration-200 gap-2 group text-white hover:bg-white hover:border hover:border-primaryColor hover:text-textColor"
+            className="flex flex-row items-center bg-primaryColor 2xl:py-3 xl:py-2 2xl:px-6 xl:px-5 lg:px-5 lg:py-2 rounded-sm duration-200 gap-2 group text-white hover:bg-white hover:border hover:border-primaryColor hover:text-textColor"
             href=""
           >
-            <p className="font-bold 2xl:text-2xl xl:text-2xl  ">Call Us</p>
+            <p className="font-bold 2xl:text-2xl xl:text-2xl lg:text-2xl  ">Call Us</p>
             <span>
               <svg
                 viewBox="0 0 24 24"
                 fill="none"
-                width="30px"
-                height="30px"
-                className=" fill-white group-hover:fill-textColor"
+                className=" fill-white group-hover:fill-textColor 2xl:w-[30px] 2xl:h-[30px] xl:w-[30px] xl:h-[30px] lg:w-[30px] lg:h-[32px]"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -49,7 +47,7 @@ function Header() {
       </nav>
       <nav className="w-full h-[35px] flex flex-row items-center justify-center bg-primaryColor overflow-hidden">
         <div className="w-full h-fuil flex justify-center items-center">
-          <ul className="2xl:w-[35%] xl:w-[45%] h-full flex flex-row justify-evenly text-xl text-white">
+          <ul className="2xl:w-[35%] xl:w-[45%] lg:w-[45%] h-full flex flex-row justify-evenly text-xl text-white">
             <li className=" cursor-pointer hover:bg-white hover:text-textColor p-4">
               <a href="#">Home</a>
             </li>
@@ -57,7 +55,7 @@ function Header() {
               <a href="#">Courses</a>
             </li>
             <li className=" cursor-pointer hover:bg-white hover:text-textColor p-4">
-              <a href="#">Affiliation</a>
+              <a href="#">Fee Structure</a>
             </li>
             <li className=" cursor-pointer hover:bg-white hover:text-textColor p-4">
               <a href="#">About Us</a>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
@@ -69,45 +69,52 @@ function Home() {
       img: "AIMS-Pic-04.webp",
     },
   ]);
+  const [picIdx, setPicIdx] = useState(0);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setPicIdx((prevIdx) =>
+        prevIdx < institutePic.length - 1 ? prevIdx + 1 : 0
+      );
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
   return (
     <div>
       <Header></Header>
       <main className="w-full h-full overflow-hidden">
-        <div className="w-full 2xl:h-[600px] xl:h-[500px] relative flex flex-row flex-wrap ">
-          <div className="w-[95%] h-full relative">
+        <div className="w-full 2xl:h-[600px] xl:h-[500px] lg:h-[500px] relative flex flex-row flex-wrap">
+          <div className="2xl:w-[95%] xl:w-[95%] lg:w-[115%] h-full relative">
             <div className="w-[100%] h-full bg-primaryColor clip-wave absolute top-0 left-0 p-8">
               <div>
                 <img
-                  className="2xl:w-[150px] 2xl:h-[150px] xl:w-[140px] xl:h-[140px]"
+                  className="2xl:w-[150px] 2xl:h-[150px] xl:w-[140px] xl:h-[140px] lg:w-[120px] lg:h-[120px]"
                   src="./AIMS-Kabirwala-logo.svg"
                   alt="AIMS-Kabirwala-logo"
                 />
               </div>
-              <div className=" flex flex-col 2xl:px-6 xl:px-4 py-10 gap-5">
-                <h1 className="text-[#f3f3f3] 2xl:text-4xl xl:text-3xl font-bold">
+              <div className=" flex flex-col 2xl:px-6 xl:px-4 lg:px-4 py-10 gap-5">
+                <h1 className="text-[#f3f3f3] 2xl:text-4xl xl:text-3xl lg:text-3xl font-bold">
                   Ayan Institute Of Medical Sciences Kabriwala
                 </h1>
-                <h2 className="text-secondaryColor 2xl:text-xl xl:text-lg">
+                <h2 className="text-secondaryColor 2xl:text-xl xl:text-lg lg:text-lg lg:text-md">
                   Jameel Colony Neya adda , khanewal road Kabirwala, Kabirwala,
                   Pakistan
                 </h2>
-                <h2 className="text-[#f3f3f3] 2xl:text-3xl xl:text-2xl ">
+                <h2 className="text-[#f3f3f3] 2xl:text-3xl xl:text-2xl lg:text-2xl">
                   College Of Pharmacy
                 </h2>
               </div>
-              <div className="w-[30%] flex flex-flex-row justify-start px-6 2xl:gap-20 xl:gap-16 2xl:pt-10 xl:pt-2">
+              <div className="w-[30%] flex flex-flex-row justify-start 2xl:px-6 xl:px-6 lg:px-5 2xl:gap-20 xl:gap-16 lg:gap-14 2xl:pt-10 xl:pt-2 lg:pt-2">
                 <a
                   href="#"
-                  className="border border-white  2xl:px-8 2xl:py-4 xl:px-6 xl:py-2 text-nowrap  rounded-sm  text-[#f3f3f3] flex flex-row gap-2 items-center group duration-200 hover:bg-white hover:text-primaryColor 2xl:text-2xl xl:text-xl"
+                  className="border border-white  2xl:px-8 2xl:py-4 xl:px-6 xl:py-2 lg:px-5 lg:py-3 text-nowrap  rounded-sm  text-[#f3f3f3] flex flex-row gap-2 items-center group duration-200 hover:bg-white hover:text-primaryColor 2xl:text-2xl xl:text-xl lg:text-2xl"
                 >
                   <p>Call Us</p>
                   <span>
                     <svg
                       viewBox="0 0 24 24"
                       fill="none"
-                      width="30px"
-                      height="30px"
-                      className=" fill-white group-hover:fill-textColor"
+                      className=" fill-white group-hover:fill-textColor 2xl:w-[30px] 2xl:h-[30px] xl:w-[30px] xl:h-[30px] lg:w-[28px] lg:h-[28px]"
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -124,14 +131,12 @@ function Home() {
                 </a>
                 <a
                   href="#"
-                  className="border border-white 2xl:px-8 2xl:py-6 xl:px-6 xl:py-3 text-nowrap rounded-sm text-[#f3f3f3] flex flex-row gap-2 items-center group duration-200 hover:bg-darkSC hover:border-primaryColor hover:text-primaryColor 2xl:text-2xl xl:text-xl "
+                  className="border border-white 2xl:px-8 2xl:py-4 xl:px-6 xl:py-3 lg:px-5 lg:py-2 text-nowrap rounded-sm text-[#f3f3f3] flex flex-row gap-2 items-center group duration-200 hover:bg-darkSC hover:border-primaryColor hover:text-primaryColor 2xl:text-2xl xl:text-xl lg:text-2xl"
                 >
                   <p>Find Us</p>
                   <span>
                     <svg
-                      className="fill-white group-hover:fill-textColor"
-                      width="30px"
-                      height="30px"
+                      className="fill-white group-hover:fill-textColor 2xl:w-[30px] 2xl:h-[30px] xl:w-[30px] xl:h-[30px] lg:w-[28px] lg:h-[28px]"
                       id="Capa_1"
                       xmlns="http://www.w3.org/2000/svg"
                       xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -167,13 +172,11 @@ function Home() {
             <div className=" absolute bg-primaryColor/10 inset-0"></div>
           </div>
         </div>
-        <div className="w-full 2xl:h-[140px] xl:h-[120px] bg-primaryColor flex justify-center gap-20 items-center">
+        <div className="w-full 2xl:h-[140px] xl:h-[120px] lg:h-[130px] bg-primaryColor flex justify-center gap-20 items-center">
           <div className="text-[#fff] text-center h-full w-[150px] flex flex-col items-center justify-center text-xl relative duration-200 group hover:bg-white hover:text-textColor cursor-pointer">
             <div className="flex flex-row gap-2">
               <svg
-                className=" stroke-white fill-white group-hover:stroke-primaryColor group-hover:fill-primaryColor"
-                width="24px"
-                height="24px"
+                className=" stroke-white fill-white group-hover:stroke-primaryColor group-hover:fill-primaryColor w-[24px] h-[24px]"
                 viewBox="0 0 1920 1920"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -192,7 +195,7 @@ function Home() {
               </svg>
               <p>8+</p>
             </div>
-            <p>Courses</p>
+            <p className="2xl:text-md xl:text-md lg:text-md">Courses</p>
             <p className="text-sm underline pt-2">Learn More</p>
           </div>
           <div className="text-primaryColor text-center h-full w-[150px] flex flex-col items-center justify-center text-xl relative bg-white duration-200 group hover:bg-primaryColor  hover:text-white cursor-pointer">
@@ -219,7 +222,7 @@ function Home() {
                 </g>
               </svg>
             </div>
-            <p>Registerd</p>
+            <p className="2xl:text-md xl:text-md lg:text-md">Registerd</p>
             <p className="text-sm underline pt-2">Learn More</p>
           </div>
           <div className="text-[#fff] text-center h-full w-[150px] flex flex-col items-center justify-center text-xl relative duration-200 group hover:bg-white hover:text-textColor cursor-pointer">
@@ -256,7 +259,7 @@ function Home() {
               </svg>
               <p>160+</p>
             </div>
-            <p>Seats</p>
+            <p className="2xl:text-md xl:text-md lg:text-md">Seats</p>
             <p className="text-sm underline pt-2">Learn More</p>
           </div>
           <div className="text-primaryColor text-center h-full w-[150px] flex flex-col items-center justify-center text-xl relative bg-white duration-200 group hover:bg-primaryColor  hover:text-white cursor-pointer">
@@ -281,17 +284,17 @@ function Home() {
                 </g>
               </svg>
             </div>
-            <p>Labs</p>
+            <p className="2xl:text-md xl:text-md lg:text-md">Labs</p>
             <p className="text-sm underline pt-2">Learn More</p>
           </div>
         </div>
       </main>
-      <section className="container mx-auto flex flex-row  2xl:p-20 xl:p-16">
+      <section className=" container mx-auto flex flex-row justify-center items-center flex-wrap 2xl:p-20 xl:p-16 lg:p-14 gap-y-20">
         <div className="w-[50%] h-full ">
-          <p className="2xl:text-3xl xl:text-2xl text-textColor ">
+          <p className="2xl:text-3xl xl:text-2xl lg:text-2xl text-textColor ">
             Welcome To A.I.M.S
           </p>
-          <article className="py-4 px-6 2xl:text-md xl:text-sm text-primaryColor">
+          <article className="py-4 px-6 2xl:text-md xl:text-sm lg:text-[12px] text-primaryColor">
             <strong>Ayan Institute Of Medical Sciences (A . I . M . S)</strong>,
             Kabirwala is a reputable college that offers diplomas, certificates,
             and specialized courses in B-Category, Operation Theater (O.T.), and
@@ -303,7 +306,7 @@ function Home() {
             knowledge needed for a successful career in the healthcare sector.
           </article>
         </div>
-        <div className="w-[50%] bg-[#edeade]  rounded-sm border border-primaryColor/40 flex flex-col items-center justify-center gap-y-2 text-textColor">
+        <div className="w-[50%] bg-[#edeade]  rounded-sm border border-primaryColor/40 flex flex-col items-center justify-center gap-y-2 text-textColor py-5">
           <p>Registered By</p>
           <img
             className="w-24 h-24"
@@ -312,9 +315,14 @@ function Home() {
           />
           <p>Punjab Pharmacy Council</p>
         </div>
+        <div className="w-full flex justify-center">
+          <div className="text-center border border-primaryColor px-6 py-2 bg-primaryColor rounded-sm text-white text-lg font-bold duration-100 hover:bg-white hover:text-textColor ">
+            <a href="#">Fee Structure & Eligibilty Criteria</a>
+          </div>
+        </div>
       </section>
       <section className="bg-primaryColor">
-        <div className="container mx-auto p-10 flex flex-row justify-center items-center gap-x-4 ">
+        <div className="container mx-auto p-10 flex flex-row justify-center items-center gap-x-10 ">
           <div className="w-[50%] bg-white p-8 rounded-sm text-textColor">
             <p className="text-3xl">We Offer : </p>
             <p className="m-4">
@@ -324,27 +332,44 @@ function Home() {
               repellendus nostrum aspernatur molestias ratione? Magni.
             </p>
           </div>
-          <div className="w-[50%] border">
-            {institutePic.map((pic, index) => (
-              <div>
-                <img
-                  src={`${pic.img}`}
-                  alt="Ayan Institute Of Medical Sciences Kabirwala Pics"
-                />
-              </div>
-            ))}
+          <div className="flex flex-col gap-4">
+            <div>
+              <img
+                className="w-full h-[250px] rounded-sm shadow-2xl border border-white/30"
+                src={`${institutePic[picIdx].img}`}
+                alt="Ayan Institute of Medical Sciences Kabriwala Pics"
+              />
+            </div>
+            <div className="mx-auto">
+              <button
+                onClick={() =>
+                  setPicIdx(picIdx > 0 ? picIdx - 1 : institutePic.length - 1)
+                }
+                className="rounded-l-full px-3 py-2 border border-primaryColor text-sm bg-white text-textColor font-bold cursor-pointer duration-100 hover:bg-primaryColor hover:text-white hover:border-white/50 shadow-white/10 shadow-lg"
+              >
+                Prev
+              </button>
+              <button
+                onClick={() =>
+                  setPicIdx(picIdx < institutePic.length - 1 ? picIdx + 1 : 0)
+                }
+                className="rounded-r-full px-3 py-2 border border-white/50 text-sm font-bold text-white cursor-pointer duration-100 hover:bg-white hover:text-textColor hover:border-primaryColor shadow-white/10 shadow-lg"
+              >
+                Next
+              </button>
+            </div>
           </div>
         </div>
       </section>
       <section className="my-12">
-        <p className="text-center text-5xl font-bold text-textColor my-8">
+        <p className="text-center 2xl:text-5xl xl:text-5xl lg:text-4xl font-bold text-textColor my-8">
           Our Featured Courses
         </p>
         <div className="container mx-auto flex justify-center  gap-x-10 gap-y-10 flex-wrap flex-none p-3 place-items-center">
           {courses.map((course, index) => (
             <div
               key={index}
-              className="relative shadow-2xl 2xl:w-[420px] xl:w-[380px] cursor-pointer duration-700 hover:scale-105"
+              className="relative shadow-2xl 2xl:w-[420px] xl:w-[380px] lg:w-[380px] cursor-pointer duration-700 hover:scale-105"
             >
               <div>
                 <img
