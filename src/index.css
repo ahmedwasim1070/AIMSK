@@ -17,6 +17,14 @@ body{
     
 }
 
-.clip-wave {
-  clip-path: ellipse(60% 100% at 0% 50%);
+@media (min-width: 768px) { /* md breakpoint */
+  .clip-wave {
+    clip-path: ellipse(100% 100% at 50% 100%);
+  }
+}
+
+@media (min-width: 1024px) { /* lg breakpoint and above */
+  .clip-wave {
+    clip-path: ellipse(60% 100% at 0% 50%);
+  }
 }
