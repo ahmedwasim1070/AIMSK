@@ -7,13 +7,13 @@ function Header({ smNav, setSmNav, smShNav, setSmShNav }) {
         <div className="w-[50%] h-full flex flex-row items-center gap-4">
           <div className="flex-none">
             <img
-              className="2xl:w-[100px] 2xl:h-[100px] xl:w-[90px] xl:h-[90px] lg:w-[90px] lg:h-[90px] md:w-[80px] md:h-[80px]"
+              className="2xl:w-[100px] 2xl:h-[100px] xl:w-[90px] xl:h-[90px] lg:w-[90px] lg:h-[90px] md:w-[80px] md:h-[80px] sm:w-[80px] sm:h-[80px] xs:w-[70px] xs:h-[70px]"
               src="./AIMS-Kabirwala-logo.svg"
               alt="AIMS Logo"
             />
           </div>
           <div>
-            <h1 className="text-textColor 2xl:text-3xl xl:text-2xl lg:text-2xl md:text-2xl text-nowrap">
+            <h1 className="text-textColor 2xl:text-3xl xl:text-2xl lg:text-2xl md:text-2xl sm:text-2xl xs:text-xl text-nowrap">
               {smNav
                 ? "Ayan Intitute Of Medical Sceinces Kabirwala"
                 : "A . I . M . S"}
@@ -22,17 +22,17 @@ function Header({ smNav, setSmNav, smShNav, setSmShNav }) {
         </div>
         <div className="w-[50%] h-full flex flex-row items-center gap-x-5 justify-end">
           <a
-            className="flex flex-row items-center bg-primaryColor 2xl:py-3 xl:py-2 2xl:px-6 xl:px-5 lg:px-5 lg:py-2 md:px-5 md:py-2.5 rounded-sm duration-200 gap-2 group text-white hover:bg-white hover:border hover:border-primaryColor hover:text-textColor"
+            className="flex flex-row items-center bg-primaryColor 2xl:py-3 xl:py-2 2xl:px-6 xl:px-5 lg:px-5 lg:py-2 md:px-5 md:py-2.5 sm:px-6 sm:py-3 xs:px-4 xs:py-2 rounded-sm duration-200 gap-2 group text-white hover:bg-white hover:border hover:border-primaryColor hover:text-textColor"
             href=""
           >
-            <p className="font-bold 2xl:text-2xl xl:text-2xl lg:text-2xl md:text-xl ">
+            <p className="font-bold 2xl:text-2xl xl:text-2xl lg:text-2xl md:text-xl sm:text-xl xs:text-lg">
               Call Us
             </p>
             <span>
               <svg
                 viewBox="0 0 24 24"
                 fill="none"
-                className=" fill-white group-hover:fill-textColor 2xl:w-[30px] 2xl:h-[30px] xl:w-[30px] xl:h-[30px] lg:w-[30px] lg:h-[32px] md:w-[25px] md:h-[25px]"
+                className=" fill-white group-hover:fill-textColor 2xl:w-[30px] 2xl:h-[30px] xl:w-[30px] xl:h-[30px] lg:w-[30px] lg:h-[32px] md:w-[25px] md:h-[25px] sm:w-[25px] sm:h-[25px] xs:w-[25px] xs:h-[25px]"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>

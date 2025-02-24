@@ -1,29 +1,35 @@
 @import "tailwindcss";
 
-@theme{
-    --color-textColor: #841518;
-    --color-primaryColor: #6D2323;
-    --color-secondaryColor: #A2CD3A;
-    --color-darkSC: #52B947;
-    --color-darkerSC: #15A84F;
+@theme {
+  --color-textColor: #841518;
+  --color-primaryColor: #6d2323;
+  --color-secondaryColor: #a2cd3a;
+  --color-darkSC: #52b947;
+  --color-darkerSC: #15a84f;
+  --breakpoint-xs: 30rem;
 }
 
-*{
-    font-family: 'Times New Roman', Times, serif;
+@media (min-width: 310px) {
+  .esm\:container {
+    max-width: 310px;
+  }
 }
 
-body{
-    background-color: #f3f3f3;
-    
+* {
+  font-family: "Times New Roman", Times, serif;
 }
 
-@media (min-width: 768px) { /* md breakpoint */
+body {
+  background-color: #f3f3f3;
+}
+
+@media (min-width: 300px) {
   .clip-wave {
     clip-path: ellipse(100% 100% at 50% 100%);
   }
 }
 
-@media (min-width: 1024px) { /* lg breakpoint and above */
+@media (min-width: 1024px) {
   .clip-wave {
     clip-path: ellipse(60% 100% at 0% 50%);
   }

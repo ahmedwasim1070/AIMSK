@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
   return (
     <footer className="bg-primaryColor">
-      <section className="py-10 flex flex-row items-center justify-around container mx-auto 2xl:flex-nowrap xl:flex-nowrap lg:flex-nowrap md:flex-wrap 2xl:gap-y-0 xl:gap-y-0 lg:gap-y-0 md:gap-y-5">
+      <section className="py-10 flex flex-row items-center justify-around container mx-auto 2xl:flex-nowrap xl:flex-nowrap lg:flex-nowrap md:flex-wrap sm:flex-wrap 2xl:gap-y-0 xl:gap-y-0 lg:gap-y-0 md:gap-y-6 sm:gap-y-6">
         <div className="underline text-[#f3f3f3]">
           <nav>
             <ul className="flex flex-col gap-y-4 2xl:text-md xl:text-md lg:text-sm">
