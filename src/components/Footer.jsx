@@ -35,7 +35,7 @@ function Footer() {
                     className="w-[30px] h-[30px] fill-white group-hover:fill-black"
                     viewBox="0 0 32 32"
                   >
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                     <g
                       id="SVGRepo_tracerCarrier"
                       strokeLinecap="round"
@@ -64,7 +64,7 @@ function Footer() {
                     <g
                       id="Page-1"
                       stroke="none"
-                      stroke-width="1"
+                      strokeWidth="1"
                       fillRule="evenodd"
                     >
                       <g
@@ -92,7 +92,7 @@ function Footer() {
                   className="w-[30px] h-[20px] fill-white group-hover:fill-black"
                   viewBox="0 0 24 24"
                 >
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                   <g
                     id="SVGRepo_tracerCarrier"
                     strokeLinecap="round"
@@ -111,7 +111,7 @@ function Footer() {
                   viewBox="0 0 24 24"
                   fill="none"
                 >
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                   <g
                     id="SVGRepo_tracerCarrier"
                     strokeLinecap="round"
@@ -134,14 +134,14 @@ function Footer() {
             </a>
           </div>
         </div>
-        <div className="flex  flex-col items-center justify-center gap-0 text-[#f3f3f3] ">
+        <div className="flex  flex-col items-center justify-center text-[#f3f3f3] ">
           <div className="flex flex-row gap-2 py-2 items-center">
             <img
-              className="w-[60px] h-[60px] 2xl:block xl:block lg:block md:block sm:block xs:block xxs:hidden"
+              className="w-[60px] h-[60px]"
               src="./AIMS-Kabirwala-logo.svg"
               alt="Logo"
             />
-            <h5 className="2xl:text-xl xl:text-xl lg:text-lg text-nowrap">
+            <h5 className="2xl:text-xl xl:text-xl lg:text-lg text-center">
               Ayan Institute Of Medical Sciences , Kabriwala
             </h5>
           </div>
@@ -154,7 +154,7 @@ function Footer() {
               className=" fill-secondaryColor"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
               <g
                 id="SVGRepo_tracerCarrier"
                 strokeLinecap="round"
@@ -199,7 +199,7 @@ function Footer() {
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
               <g
                 id="SVGRepo_tracerCarrier"
                 strokeLinecap="round"

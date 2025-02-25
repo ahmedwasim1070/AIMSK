@@ -35,7 +35,7 @@ function Header({ smNav, setSmNav, smShNav, setSmShNav }) {
                 className=" fill-white group-hover:fill-textColor 2xl:w-[30px] 2xl:h-[30px] xl:w-[30px] xl:h-[30px] lg:w-[30px] lg:h-[32px] md:w-[25px] md:h-[25px] sm:w-[25px] sm:h-[25px] xs:w-[25px] xs:h-[25px]"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                 <g
                   id="SVGRepo_tracerCarrier"
                   strokeLinecap="round"

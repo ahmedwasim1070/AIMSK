@@ -147,7 +147,7 @@ function Home() {
               viewBox="0 0 1920 1920"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
               <g
                 id="SVGRepo_tracerCarrier"
                 strokeLinecap="round"
@@ -156,7 +156,7 @@ function Home() {
               <g id="SVGRepo_iconCarrier">
                 <path
                   d="M1750.176 0v1468.235h-225.882v338.824h169.412V1920H451.353c-82.447 0-161.506-36.141-215.718-99.388-42.917-50.824-66.635-116.33-66.635-182.965V282.353C169 126.494 295.494 0 451.353 0h1298.823Zm-338.823 1468.235H463.776c-89.223 0-166.023 60.989-179.576 140.047-1.13 9.036-2.259 18.07-2.259 25.977v3.388c0 40.659 13.553 79.059 40.659 109.553 31.624 38.4 79.059 59.859 128.753 59.859h960v-112.941H408.435v-112.942h1002.918v-112.94Zm-56.47-564.706h-790.59v112.942h790.588V903.529Zm56.47-564.705h-903.53v451.764h903.53V338.824ZM620.765 677.647h677.647V451.765H620.765v225.882Z"
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                 ></path>
               </g>
             </svg>
@@ -169,7 +169,7 @@ function Home() {
               xmlns="http://www.w3.org/2000/svg"
               className="w-[30px] h-[30px] fill-primaryColor"
             >
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
               <g
                 id="SVGRepo_tracerCarrier"
                 strokeLinecap="round"
@@ -201,7 +201,7 @@ function Home() {
                 <style type="text/css"> </style>
                 <g>
                   <path
-                    class="st0"
+                    className="st0"
                     d="M256,0C114.616,0,0,114.612,0,256s114.616,256,256,256s256-114.612,256-256S397.385,0,256,0z M207.678,378.794 c0-17.612,14.281-31.893,31.893-31.893c17.599,0,31.88,14.281,31.88,31.893c0,17.595-14.281,31.884-31.88,31.884 C221.959,410.678,207.678,396.389,207.678,378.794z M343.625,218.852c-3.596,9.793-8.802,18.289-14.695,25.356 c-11.847,14.148-25.888,22.718-37.442,29.041c-7.719,4.174-14.533,7.389-18.769,9.769c-2.905,1.604-4.479,2.95-5.256,3.826 c-0.768,0.926-1.029,1.306-1.496,2.826c-0.273,1.009-0.558,2.612-0.558,5.091c0,6.868,0,12.512,0,12.512 c0,6.472-5.248,11.728-11.723,11.728h-28.252c-6.475,0-11.732-5.256-11.732-11.728c0,0,0-5.645,0-12.512 c0-6.438,0.752-12.744,2.405-18.777c1.636-6.008,4.215-11.718,7.508-16.694c6.599-10.083,15.542-16.802,23.984-21.48 c7.401-4.074,14.723-7.455,21.516-11.281c6.789-3.793,12.843-7.91,17.302-12.372c2.988-2.975,5.31-6.05,7.087-9.52 c2.335-4.628,3.955-10.067,3.992-18.389c0.012-2.463-0.698-5.702-2.632-9.405c-1.926-3.686-5.066-7.694-9.264-11.29 c-8.45-7.248-20.843-12.545-35.054-12.521c-16.285,0.058-27.186,3.876-35.587,8.62c-8.36,4.776-11.029,9.595-11.029,9.595 c-4.268,3.718-10.603,3.85-15.025,0.314l-21.71-17.397c-2.719-2.173-4.322-5.438-4.396-8.926c-0.063-3.479,1.425-6.81,4.061-9.099 c0,0,6.765-10.43,22.451-19.38c15.62-8.992,36.322-15.488,61.236-15.429c20.215,0,38.839,5.562,54.268,14.661 c15.434,9.148,27.897,21.744,35.851,36.876c5.281,10.074,8.525,21.43,8.533,33.38C349.211,198.042,347.248,209.058,343.625,218.852 z"
                   ></path>
                 </g>
@@ -216,7 +216,7 @@ function Home() {
               className="w-[30px] h-[30px] fill-white group-hover:fill-black"
               viewBox="0 0 32 32"
             >
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
               <g
                 id="SVGRepo_tracerCarrier"
                 strokeLinecap="round"
@@ -243,7 +243,7 @@ function Home() {
                 <g
                   id="Page-1"
                   stroke="none"
-                  stroke-width="1"
+                  strokeWidth="1"
                   fillRule="evenodd"
                 >
                   <g
@@ -266,7 +266,7 @@ function Home() {
               className="w-[30px] h-[20px] fill-white group-hover:fill-black"
               viewBox="0 0 24 24"
             >
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
               <g
                 id="SVGRepo_tracerCarrier"
                 strokeLinecap="round"
@@ -283,7 +283,7 @@ function Home() {
               viewBox="0 0 24 24"
               fill="none"
             >
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
               <g
                 id="SVGRepo_tracerCarrier"
                 strokeLinecap="round"
@@ -343,10 +343,10 @@ function Home() {
                     College Of Pharmacy
                   </h2>
                 </div>
-                <div className="w-[30%] flex flex-flex-row justify-start 2xl:px-6 xl:px-6 lg:px-5 md:px-2 sm:px-4 xs:px-2 xxs:px-2 2xl:gap-20 xl:gap-16 lg:gap-14 md:gap-16 sm:gap-12 xs:gap-10 xxs:gap-5 2xl:pt-10 xl:pt-2 lg:pt-2 md:pt-4 sm:pt-2 xs:pt-2 xxs:pt-2">
+                <div className="w-[30%] flex flex-flex-row justify-start 2xl:px-6 xl:px-6 lg:px-5 md:px-2 sm:px-4 xs:px-2 xxs:px-0 2xl:gap-20 xl:gap-16 lg:gap-14 md:gap-16 sm:gap-12 xs:gap-10 xxs:gap-5 2xl:pt-10 xl:pt-2 lg:pt-2 md:pt-4 sm:pt-2 xs:pt-2 xxs:pt-2">
                   <a
                     href="tel:+923009279148"
-                    className="border border-white  2xl:px-8 2xl:py-4 xl:px-6 xl:py-2 lg:px-5 lg:py-3 md:px-7 md:py-3 sm:px-5 sm:py-3 xs:px-4 xs:py-3 xxs:px-2 xxs:py-3 text-nowrap  rounded-sm  text-[#f3f3f3] flex flex-row gap-2 items-center group duration-200 hover:bg-white hover:text-primaryColor 2xl:text-2xl xl:text-xl lg:text-2xl md:text-2xl sm:text-xl xs:text-xl xxs:text-lg"
+                    className="border border-white 2xl:px-8 2xl:py-4 xl:px-6 xl:py-2 lg:px-5 lg:py-3 md:px-7 md:py-3 sm:px-5 sm:py-3 xs:px-5 xs:py-4 xxs:px-2 xxs:py-3 text-nowrap  rounded-sm  text-[#f3f3f3] flex flex-row gap-2 items-center group duration-200 hover:bg-white hover:text-primaryColor 2xl:text-2xl xl:text-xl lg:text-2xl md:text-2xl sm:text-xl xs:text-xl xxs:text-lg"
                   >
                     <p>Call Us</p>
                     <span>
@@ -356,7 +356,7 @@ function Home() {
                         className=" fill-white group-hover:fill-textColor 2xl:w-[30px] 2xl:h-[30px] xl:w-[30px] xl:h-[30px] lg:w-[28px] lg:h-[28px] md:w-[35px] md:h-[35px] sm:w-[28px] sm:h-[28px] xs:w-[28px] xs:h-[28px] xxs:w-[25px] xxs:h-[25px]"
                         xmlns="http://www.w3.org/2000/svg"
                       >
-                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                         <g
                           id="SVGRepo_tracerCarrier"
                           strokeLinecap="round"
@@ -419,7 +419,7 @@ function Home() {
                   viewBox="0 0 1920 1920"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                   <g
                     id="SVGRepo_tracerCarrier"
                     strokeLinecap="round"
@@ -428,7 +428,7 @@ function Home() {
                   <g id="SVGRepo_iconCarrier">
                     <path
                       d="M1750.176 0v1468.235h-225.882v338.824h169.412V1920H451.353c-82.447 0-161.506-36.141-215.718-99.388-42.917-50.824-66.635-116.33-66.635-182.965V282.353C169 126.494 295.494 0 451.353 0h1298.823Zm-338.823 1468.235H463.776c-89.223 0-166.023 60.989-179.576 140.047-1.13 9.036-2.259 18.07-2.259 25.977v3.388c0 40.659 13.553 79.059 40.659 109.553 31.624 38.4 79.059 59.859 128.753 59.859h960v-112.941H408.435v-112.942h1002.918v-112.94Zm-56.47-564.706h-790.59v112.942h790.588V903.529Zm56.47-564.705h-903.53v451.764h903.53V338.824ZM620.765 677.647h677.647V451.765H620.765v225.882Z"
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                     ></path>
                   </g>
                 </svg>
@@ -446,11 +446,11 @@ function Home() {
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                   <g
                     id="SVGRepo_tracerCarrier"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   ></g>
                   <g id="SVGRepo_iconCarrier">
                     <path
@@ -511,11 +511,11 @@ function Home() {
                   version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                   <g
                     id="SVGRepo_tracerCarrier"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   ></g>
                   <g id="SVGRepo_iconCarrier">
                     <title>lab</title>
@@ -528,7 +528,7 @@ function Home() {
             </div>
           </div>
         </main>
-        <section className="container mx-auto flex 2xl:flex-row xl:flex-row lg:flex-row md:flex-col justify-center 2xl:items-center xl:items-center lg:items-center md:items-start flex-wrap 2xl:px-20 2xl:py-20 xl:px-16 xl:py-16 lg:px-14 lg:py-14 md:px-10 md:py-20 sm:px-5 xs:px-2 xxs:px-1 sm:py-20 xs:py-10 xxs:py-20 2xl:gap-y-20 xl:gap-y-20 lg:gap-y-20 md:gap-y-10 sm:gap-y-10 xs:gap-y-8 xxs:gap-y-6">
+        <section className="container mx-auto flex 2xl:flex-row xl:flex-row lg:flex-row md:flex-col justify-center 2xl:items-center xl:items-center lg:items-center md:items-start flex-wrap 2xl:px-20 2xl:py-20 xl:px-16 xl:py-16 lg:px-14 lg:py-14 md:px-10 md:py-20 sm:px-5 xs:px-2 xxs:px-0 sm:py-20 xs:py-10 xxs:py-20 2xl:gap-y-20 xl:gap-y-20 lg:gap-y-20 md:gap-y-10 sm:gap-y-10 xs:gap-y-8 xxs:gap-y-6">
           <div className="2xl:w-[50%] xl:w-[50%] lg:w-[50%] md:w-full h-full ">
             <p className="2xl:text-3xl xl:text-3xl lg:text-2xl md:text-3xl sm:text-2xl xs:text-2xl xxs:text-2xl text-textColor ">
               Welcome To A.I.M.S
@@ -564,8 +564,8 @@ function Home() {
           </div>
         </section>
         <section className="bg-primaryColor">
-          <div className="container mx-auto p-10 flex 2xl:flex-row xl:flex-row lg:flex-row md:flex-col sm:flex-col xs:flex-col xxs:flex-col justify-center items-center gap-10 ">
-            <div className="2xl:w-[50%] xl:w-[50%] lg:w-[50%] md:w-full bg-white p-8 rounded-sm text-textColor">
+          <div className="2xl:container xl:container lg:container md:container sm:container xs:container 2xl:mx-auto xl:mx-auto lg:mx-auto md:mx-auto sm:mx-auto xs:mx-auto xxs:mx-0 p-10 flex 2xl:flex-row xl:flex-row lg:flex-row md:flex-col sm:flex-col xs:flex-col xxs:flex-col justify-center items-center gap-10 ">
+            <div className="2xl:w-[50%] xl:w-[50%] lg:w-[50%] md:w-full sm:w-full xs:w-full xxs:w-full bg-white p-8 rounded-sm text-textColor">
               <p className="text-3xl">We Offer : </p>
               <p className="m-4">
                 Ayan Institue Institute of Medical Sciences (AIMS) is a leading
@@ -617,11 +617,11 @@ function Home() {
           <p className="text-center 2xl:text-5xl xl:text-5xl lg:text-4xl md:text-4xl sm:text-4xl xs:text-3xl xxs:text-3xl font-bold text-textColor my-8">
             Our Featured Courses
           </p>
-          <div className="container mx-auto flex justify-center  gap-x-10 gap-y-10 flex-wrap flex-none p-3 place-items-center">
+          <div className="mx-auto flex justify-center  gap-x-10 gap-y-10 flex-wrap flex-none p-3 place-items-center">
             {courses.map((course, index) => (
               <div
                 key={index}
-                className="relative shadow-2xl 2xl:w-[420px] xl:w-[380px] lg:w-[380px] md:w-[400px]  xs:w-[420px] xxs::w-[320px] cursor-pointer duration-700 hover:scale-105"
+                className="relative shadow-2xl 2xl:w-[450px] xl:w-[380px] lg:w-[380px] md:w-[400px]  xs:w-[420px]  cursor-pointer duration-700 hover:scale-105"
               >
                 <div>
                   <img
