@@ -6,7 +6,8 @@
   --color-secondaryColor: #a2cd3a;
   --color-darkSC: #52b947;
   --color-darkerSC: #15a84f;
-  --breakpoint-xs: 30rem;
+  --breakpoint-xs: 28rem;
+  --breakpoint-xxs: 20rem;
 }
 
 @media (min-width: 310px) {

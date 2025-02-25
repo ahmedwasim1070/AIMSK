@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
   return (
     <footer className="bg-primaryColor">
-      <section className="py-10 flex flex-row items-center justify-around container mx-auto 2xl:flex-nowrap xl:flex-nowrap lg:flex-nowrap md:flex-wrap sm:flex-wrap 2xl:gap-y-0 xl:gap-y-0 lg:gap-y-0 md:gap-y-6 sm:gap-y-6">
+      <section className="py-10 flex flex-row items-center justify-around container mx-auto 2xl:flex-nowrap xl:flex-nowrap lg:flex-nowrap md:flex-wrap sm:flex-wrap xs:flex-wrap xxs:flex-wrap 2xl:gap-y-0 xl:gap-y-0 lg:gap-y-0 md:gap-y-6 sm:gap-y-6 xs:gap-y-8 xxs:gap-y-20">
         <div className="underline text-[#f3f3f3]">
           <nav>
             <ul className="flex flex-col gap-y-4 2xl:text-md xl:text-md lg:text-sm">
@@ -30,22 +30,25 @@ function Footer() {
           <div>
             <ul className="flex flex-row flex-nowrap gap-x-6">
               <li className="border rounded-full p-2 flex items-center justify-center cursor-pointer duration-300 group hover:bg-[#316FF6] hover:border-[#316FF6]">
-                <svg
-                  className="w-[30px] h-[30px] fill-white group-hover:fill-black"
-                  viewBox="0 0 32 32"
-                >
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                  <g
-                    id="SVGRepo_tracerCarrier"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  ></g>
-                  <g id="SVGRepo_iconCarrier">
-                    <path d="M21.95 5.005l-3.306-.004c-3.206 0-5.277 2.124-5.277 5.415v2.495H10.05v4.515h3.317l-.004 9.575h4.641l.004-9.575h3.806l-.003-4.514h-3.803v-2.117c0-1.018.241-1.533 1.566-1.533l2.366-.001.01-4.256z"></path>
-                  </g>
-                </svg>
+                <a href="https://www.facebook.com/aimskabirwala">
+                  <svg
+                    className="w-[30px] h-[30px] fill-white group-hover:fill-black"
+                    viewBox="0 0 32 32"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path d="M21.95 5.005l-3.306-.004c-3.206 0-5.277 2.124-5.277 5.415v2.495H10.05v4.515h3.317l-.004 9.575h4.641l.004-9.575h3.806l-.003-4.514h-3.803v-2.117c0-1.018.241-1.533 1.566-1.533l2.366-.001.01-4.256z"></path>
+                    </g>
+                  </svg>
+                </a>
               </li>
               <li className="border rounded-full p-2 flex items-center justify-center cursor-pointer duration-300 group hover:bg-[#25D366] hover:border-[#25D366]">
+                <a href="https://wa.me/923009279148">
                 <svg
                   className="w-[30px] h-[20px] fill-white group-hover:fill-black "
                   viewBox="0 0 20 20"
@@ -81,8 +84,10 @@ function Footer() {
                     </g>
                   </g>
                 </svg>
+                </a>
               </li>
               <li className="border rounded-full p-2 flex items-center justify-center cursor-pointer duration-300 group hover:bg-[#BB001B] hover:border-[#BB001B]">
+                <a href="mailto:aimskabirwala@gmail.com">
                 <svg
                   className="w-[30px] h-[20px] fill-white group-hover:fill-black"
                   viewBox="0 0 24 24"
@@ -97,8 +102,10 @@ function Footer() {
                     <path d="M22,5V9L12,13,2,9V5A1,1,0,0,1,3,4H21A1,1,0,0,1,22,5ZM2,11.154V19a1,1,0,0,0,1,1H21a1,1,0,0,0,1-1V11.154l-10,4Z"></path>
                   </g>
                 </svg>
+                </a>
               </li>
               <li className="border rounded-full p-2 flex items-center justify-center cursor-pointer duration-300 group hover:bg-darkerSC hover:border-darkerSC">
+                <a href="tel:+923009279148">
                 <svg
                   className="w-[30px] h-[20px] fill-white group-hover:fill-black"
                   viewBox="0 0 24 24"
@@ -114,17 +121,23 @@ function Footer() {
                     <path d="M16.5562 12.9062L16.1007 13.359C16.1007 13.359 15.0181 14.4355 12.0631 11.4972C9.10812 8.55901 10.1907 7.48257 10.1907 7.48257L10.4775 7.19738C11.1841 6.49484 11.2507 5.36691 10.6342 4.54348L9.37326 2.85908C8.61028 1.83992 7.13596 1.70529 6.26145 2.57483L4.69185 4.13552C4.25823 4.56668 3.96765 5.12559 4.00289 5.74561C4.09304 7.33182 4.81071 10.7447 8.81536 14.7266C13.0621 18.9492 17.0468 19.117 18.6763 18.9651C19.1917 18.9171 19.6399 18.6546 20.0011 18.2954L21.4217 16.883C22.3806 15.9295 22.1102 14.2949 20.8833 13.628L18.9728 12.5894C18.1672 12.1515 17.1858 12.2801 16.5562 12.9062Z"></path>
                   </g>
                 </svg>
+                </a>
               </li>
             </ul>
           </div>
           <div>
-            <a className="underline text-secondaryColor duration-200 hover:text-white" href="#">About dev</a>
+            <a
+              className="underline text-secondaryColor duration-200 hover:text-white"
+              href="#"
+            >
+              About dev
+            </a>
           </div>
         </div>
         <div className="flex  flex-col items-center justify-center gap-0 text-[#f3f3f3] ">
           <div className="flex flex-row gap-2 py-2 items-center">
             <img
-              className="w-[60px] h-[60px] "
+              className="w-[60px] h-[60px] 2xl:block xl:block lg:block md:block sm:block xs:block xxs:hidden"
               src="./AIMS-Kabirwala-logo.svg"
               alt="Logo"
             />
@@ -176,8 +189,8 @@ function Footer() {
                 </g>
               </g>
             </svg>
-            <h5 className="text-sm">
-              Khanewal Road, Jamil Colony, Kabirwala, Khanewal, Punjab 58250
+            <h5 className="text-sm text-wrap text-center">
+              Khanewal Road, Jamil Colony, Kabirwala, Khanewal, Punjab
             </h5>
           </div>
           <div className=" flex flex-row gap-2 text-nowrap items-center mx-4">

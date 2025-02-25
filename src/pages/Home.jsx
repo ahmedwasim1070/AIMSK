@@ -74,24 +74,24 @@ function Home() {
   const [picIdx, setPicIdx] = useState(0);
 
   useEffect(() => {
-  const interval = setInterval(() => {
-    setPicIdx((prevIdx) =>
-      prevIdx < institutePic.length - 1 ? prevIdx + 1 : 0
-    );
-  }, 3000);
-  
-  const checkScreenSize = () => {
-    setSmNav(window.innerWidth >= 1022);
-  };
-  
-  checkScreenSize();
-  window.addEventListener("resize", checkScreenSize);
-  
-  return () => {
-    clearInterval(interval);
-    window.removeEventListener("resize", checkScreenSize);
-  };
-}, []);
+    const interval = setInterval(() => {
+      setPicIdx((prevIdx) =>
+        prevIdx < institutePic.length - 1 ? prevIdx + 1 : 0
+      );
+    }, 3000);
+
+    const checkScreenSize = () => {
+      setSmNav(window.innerWidth >= 1022);
+    };
+
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+
+    return () => {
+      clearInterval(interval);
+      window.removeEventListener("resize", checkScreenSize);
+    };
+  }, []);
 
   return (
     <div>
@@ -102,21 +102,23 @@ function Home() {
         setSmShNav={setSmShNav}
       ></Header>
       <nav
-        className={`bg-[#f3f3f3] md:w-[60%] sm:w-[70%] xs:w-[80%] h-[90vh] fixed duration-300 ${
-          smShNav ? "right-0" : "md:right-[-60%] sm:right-[-70%] xs:right-[-80%]"
+        className={`bg-[#f3f3f3] md:w-[60%] sm:w-[70%] xs:w-[80%] xxs:w-[90%] h-[90vh] fixed duration-300 ${
+          smShNav
+            ? "right-0"
+            : "md:right-[-60%] sm:right-[-70%] xs:right-[-80%] xxs:right-[-90%]"
         } z-50 border border-primaryColor/30 rounded-sm flex flex-col`}
       >
         <div className="py-6 flex flex-row gap-x-3 gap-y-6 justify-center items-center flex-wrap ">
           <img
-            className="md:w-[70px] sm:w-[60px] xs:w-[60px] md:h-[70px] sm:h-[60px] xs:h-[60px]"
+            className="md:w-[70px] sm:w-[60px] xs:w-[60px] md:h-[70px] sm:h-[60px] xs:h-[60px] xxs:w-[50px] xxs:h-[50px]"
             src="./AIMS-Kabirwala-logo.svg"
             alt="AIMS-Kabirwala-logo"
           />
-          <p className="md:text-xl sm:text-lg xs:text-lg font-bold text-textColor">
+          <p className="md:text-xl sm:text-lg xs:text-lg xxs:text-sm font-bold text-textColor">
             Ayan Intitute Of Medical Sciences Kabirwala
           </p>
         </div>
-        <ul className="text-textColor font-bold text-lg md:py-24 sm:py-26 xs:py-22">
+        <ul className="text-textColor font-bold text-lg md:py-24 sm:py-26 xs:py-20 xxs:py-22">
           <hr className="w-full border-primaryColor" />
           <li className="py-4 flex flex-row items-center justify-between mx-10 cursor-pointer">
             <a href="#">Home</a>
@@ -293,7 +295,7 @@ function Home() {
             </svg>
           </li>
         </ul>
-        <ul className="w-full flex flex-row items-center justify-evenly gap-x-4 text-primaryColor underline md:pt-8 sm:pt-4">
+        <ul className="w-full flex flex-row items-center justify-evenly gap-x-4 text-primaryColor underline md:pt-8 sm:pt-4 xs:pt-6 xxs:pt-8">
           <li>
             <a href="#">Admin-Portal</a>
           </li>
@@ -307,7 +309,9 @@ function Home() {
       </nav>
       <div
         className={`relative duration-300 ${
-          smShNav ? "md:left-[-60%] sm:left-[-70%] xs:left-[-80%]" : "left-0"
+          smShNav
+            ? "md:left-[-60%] sm:left-[-70%] xs:left-[-80%] xxs:left-[-90%]"
+            : "left-0"
         }`}
       >
         {smShNav && (
@@ -317,39 +321,39 @@ function Home() {
           ></div>
         )}
         <main className="w-full h-full overflow-hidden">
-          <div className="w-full 2xl:h-[600px] xl:h-[500px] lg:h-[500px] md:h-[850px] sm:h-[800px] relative flex 2xl:flex-row xl:flex-row lg:flex-row md:flex-col sm:flex-col flex-wrap">
-            <div className="2xl:w-[95%] xl:w-[95%] lg:w-[115%] md:w-[100%] sm:w-[100%] h-full relative">
-              <div className="w-[100%] h-full bg-primaryColor clip-wave absolute 2xl:top-0 xl:top-0 lg:top-0 md:top-[200px] sm:top-[250px] left-0 p-8 2xl:pt-0 xl:pt-0 lg:pt-0 md:pt-40 sm:pt-30">
+          <div className="w-full 2xl:h-[600px] xl:h-[500px] lg:h-[500px] md:h-[850px] sm:h-[800px] xs:h-[800px] xxs:h-[600px] relative flex 2xl:flex-row xl:flex-row lg:flex-row md:flex-col sm:flex-col xs:flex-col xxs:flex-col flex-wrap">
+            <div className="2xl:w-[95%] xl:w-[95%] lg:w-[115%] md:w-[100%] sm:w-[100%] xs:w-[100%] xxs:w-[100%] h-full relative">
+              <div className="w-[100%] h-full bg-primaryColor clip-wave absolute 2xl:top-0 xl:top-0 lg:top-0 md:top-[200px] sm:top-[250px] xs:top-[200px] xxs:top-[100px] left-0 2xl:p-8 xl:p-8 lg:p-8 md:p-8 sm:p-6 xs:p-6 xxs:p-4 2xl:pt-0 xl:pt-0 lg:pt-0 md:pt-40 sm:pt-30 xs:pt-24 xxs:pt-20">
                 <div>
                   <img
-                    className="2xl:w-[150px] 2xl:h-[150px] xl:w-[140px] xl:h-[140px] lg:w-[120px] lg:h-[120px] sm:w-[120px] sm:h-[120px]"
+                    className="2xl:w-[150px] 2xl:h-[150px] xl:w-[140px] xl:h-[140px] lg:w-[120px] lg:h-[120px] sm:w-[120px] sm:h-[120px] xs:w-[120px] xs:h-[120px] xxs:w-[80px] xxs:h-[80px]"
                     src="./AIMS-Kabirwala-logo.svg"
                     alt="AIMS-Kabirwala-logo"
                   />
                 </div>
-                <div className=" flex flex-col 2xl:px-6 xl:px-4 lg:px-4 md:px-2 sm:px-3 py-10 gap-5">
-                  <h1 className="text-[#f3f3f3] 2xl:text-4xl xl:text-3xl lg:text-3xl md:text-3xl sm:text-2xl font-bold">
+                <div className=" flex flex-col 2xl:px-6 xl:px-4 lg:px-4 md:px-2 sm:px-3 xs:px-0 py-10 gap-5">
+                  <h1 className="text-[#f3f3f3] 2xl:text-4xl xl:text-3xl lg:text-3xl md:text-3xl sm:text-2xl xs:text-2xl xxs:text-xl font-bold">
                     Ayan Institute Of Medical Sciences Kabriwala
                   </h1>
-                  <h2 className="text-secondaryColor 2xl:text-xl xl:text-lg lg:text-lg lg:text-md md:text-lg sm:text-lg">
+                  <h2 className="text-secondaryColor 2xl:text-xl xl:text-lg lg:text-lg lg:text-md md:text-lg sm:text-lg xs:text-md xxs:text-sm">
                     Jameel Colony Neya adda , khanewal road Kabirwala,
                     Kabirwala, Pakistan
                   </h2>
-                  <h2 className="text-[#f3f3f3] 2xl:text-3xl xl:text-2xl lg:text-2xl md:text-2xl sm:text-xl">
+                  <h2 className="text-[#f3f3f3] 2xl:text-3xl xl:text-2xl lg:text-2xl md:text-2xl sm:text-xl xs:text-xl xxs:text-lg">
                     College Of Pharmacy
                   </h2>
                 </div>
-                <div className="w-[30%] flex flex-flex-row justify-start 2xl:px-6 xl:px-6 lg:px-5 md:px-2 sm:px-4 2xl:gap-20 xl:gap-16 lg:gap-14 md:gap-16 sm:gap-12 2xl:pt-10 xl:pt-2 lg:pt-2 md:pt-4 sm:pt-2">
+                <div className="w-[30%] flex flex-flex-row justify-start 2xl:px-6 xl:px-6 lg:px-5 md:px-2 sm:px-4 xs:px-2 xxs:px-2 2xl:gap-20 xl:gap-16 lg:gap-14 md:gap-16 sm:gap-12 xs:gap-10 xxs:gap-5 2xl:pt-10 xl:pt-2 lg:pt-2 md:pt-4 sm:pt-2 xs:pt-2 xxs:pt-2">
                   <a
-                    href="#"
-                    className="border border-white  2xl:px-8 2xl:py-4 xl:px-6 xl:py-2 lg:px-5 lg:py-3 md:px-7 md:py-3 sm:px-5 sm:py-3 text-nowrap  rounded-sm  text-[#f3f3f3] flex flex-row gap-2 items-center group duration-200 hover:bg-white hover:text-primaryColor 2xl:text-2xl xl:text-xl lg:text-2xl md:text-2xl sm:text-xl"
+                    href="tel:+923009279148"
+                    className="border border-white  2xl:px-8 2xl:py-4 xl:px-6 xl:py-2 lg:px-5 lg:py-3 md:px-7 md:py-3 sm:px-5 sm:py-3 xs:px-4 xs:py-3 xxs:px-2 xxs:py-3 text-nowrap  rounded-sm  text-[#f3f3f3] flex flex-row gap-2 items-center group duration-200 hover:bg-white hover:text-primaryColor 2xl:text-2xl xl:text-xl lg:text-2xl md:text-2xl sm:text-xl xs:text-xl xxs:text-lg"
                   >
                     <p>Call Us</p>
                     <span>
                       <svg
                         viewBox="0 0 24 24"
                         fill="none"
-                        className=" fill-white group-hover:fill-textColor 2xl:w-[30px] 2xl:h-[30px] xl:w-[30px] xl:h-[30px] lg:w-[28px] lg:h-[28px] md:w-[35px] md:h-[35px] sm:w-[28px] sm:h-[28px]"
+                        className=" fill-white group-hover:fill-textColor 2xl:w-[30px] 2xl:h-[30px] xl:w-[30px] xl:h-[30px] lg:w-[28px] lg:h-[28px] md:w-[35px] md:h-[35px] sm:w-[28px] sm:h-[28px] xs:w-[28px] xs:h-[28px] xxs:w-[25px] xxs:h-[25px]"
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -365,13 +369,13 @@ function Home() {
                     </span>
                   </a>
                   <a
-                    href="#"
-                    className="border border-white 2xl:px-8 2xl:py-4 xl:px-6 xl:py-3 lg:px-5 lg:py-2 md:px-7 md:py-3 sm:px-5 sm:py-3 text-nowrap rounded-sm text-[#f3f3f3] flex flex-row gap-2 items-center group duration-200 hover:bg-darkSC hover:border-primaryColor hover:text-primaryColor 2xl:text-2xl xl:text-xl lg:text-2xl md:text-2xl sm:text-xl"
+                    href="https://www.google.com/maps/place/Ayan+Institute+Of+Medical+Sciences+Kabirwala/@30.7293711,71.8622179,10z/data=!4m10!1m3!11m2!2sKh20YjD5je1xGqDb-Qexbx_0OsMKyg!3e1!3m5!1s0x3924abbc50843223:0x442e3e18c34f5407!8m2!3d30.3987292!4d71.865604!16s%2Fg%2F11rcmnxkjf?entry=ttu&g_ep=EgoyMDI1MDIxOS4xIKXMDSoASAFQAw%3D%3D"
+                    className="border border-white 2xl:px-8 2xl:py-4 xl:px-6 xl:py-3 lg:px-5 lg:py-2 md:px-7 md:py-3 sm:px-5 sm:py-3 xs:px-4 xs:py-3 xxs:px-2 xxs:py-3 text-nowrap rounded-sm text-[#f3f3f3] flex flex-row gap-2 items-center group duration-200 hover:bg-darkSC hover:border-primaryColor hover:text-primaryColor 2xl:text-2xl xl:text-xl lg:text-2xl md:text-2xl sm:text-xl xs:text-xl xxs:text-lg"
                   >
                     <p>Find Us</p>
                     <span>
                       <svg
-                        className="fill-white group-hover:fill-textColor 2xl:w-[30px] 2xl:h-[30px] xl:w-[30px] xl:h-[30px] lg:w-[28px] lg:h-[28px] md:w-[35px] md:h-[35px] sm:w-[28px] sm:h-[28px]"
+                        className="fill-white group-hover:fill-textColor 2xl:w-[30px] 2xl:h-[30px] xl:w-[30px] xl:h-[30px] lg:w-[28px] lg:h-[28px] md:w-[35px] md:h-[35px] sm:w-[28px] sm:h-[28px] xs:w-[28px] xs:h-[28px] xxs:w-[25px] xxs:h-[25px]"
                         id="Capa_1"
                         xmlns="http://www.w3.org/2000/svg"
                         xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -396,7 +400,7 @@ function Home() {
                   </a>
                 </div>
               </div>
-              <div className="2xl:w-[30%] xl:w-[30%] lg:w-[30%] md:w-full sm:w-full 2xl:h-full xl:h-full lg:h-full md:h-[150px] sm:h-[200px] bg-gradient-to-r from-primaryColor/40 to-white/40 clip-wave absolute 2xl:top-0 xl:top-0 lg:top-0 md:top-[150px] sm:top-[200px] 2xl:left-[50%] xl:left-[50%] lg:left-[50%] md:left-0 2xl:z-0 xl:z-0 lg:z-0 md:-z-10 sm:-z-10"></div>
+              <div className="2xl:w-[30%] xl:w-[30%] lg:w-[30%] md:w-full sm:w-full xs:w-full xxs:w-full 2xl:h-full xl:h-full lg:h-full md:h-[150px] sm:h-[200px] xs:h-[200px] xxs:h-[200px] bg-gradient-to-r from-primaryColor/40 to-white/40 clip-wave absolute 2xl:top-0 xl:top-0 lg:top-0 md:top-[150px] sm:top-[200px] xs:top-[150px] xxs:top-[80px] 2xl:left-[50%] xl:left-[50%] lg:left-[50%] md:left-0 2xl:z-0 xl:z-0 lg:z-0 md:-z-10 sm:-z-10 xs:-z-10 xxs:-z-10"></div>
             </div>
             <div className="2xl:w-[90%] xl:w-[90%] lg:w-[90%] md:w-full 2xl:h-full xl:h-full lg:h-full md:h-[350px]  absolute 2xl:left-[20%] xl:left-[20%] lg:left-[20%] md:left-0 overflow-hidden -z-50">
               <img
@@ -407,8 +411,8 @@ function Home() {
               <div className="absolute bg-primaryColor/10 inset-0"></div>
             </div>
           </div>
-          <div className="w-full 2xl:h-[140px] xl:h-[120px] lg:h-[130px] md:h-full sm:h-full  bg-primaryColor flex flex-row  2xl:gap-20 xl:gap-20 lg:gap-20 md:gap-10 sm:gap-0 items-center justify-center 2xl:pt-0 xl:pt-0 lg:pt-0 md:pt-0 sm:pt-6">
-            <div className="2xl:w-[150px] xl:w-[150px] lg:w-[150px] md:w-[150px] sm:w-[150px] 2xl:h-full xl:h-full lg:h-full md:h-[150px] sm:h-[150px]  text-[#fff] text-center flex flex-col items-center justify-center text-xl relative duration-200 group hover:bg-white hover:text-textColor cursor-pointer flex-none">
+          <div className="w-full 2xl:h-[140px] xl:h-[120px] lg:h-[130px] md:h-full sm:h-full xs:h-full xxs:h-full bg-primaryColor flex flex-row  2xl:gap-20 xl:gap-20 lg:gap-20 md:gap-10 sm:gap-0 xs:gap-0 xxs:gap-0 items-center justify-center 2xl:pt-0 xl:pt-0 lg:pt-0 md:pt-0 sm:pt-6 xs:pt-5 xxs:pt-2 flex-wrap">
+            <div className="2xl:w-[150px] xl:w-[150px] lg:w-[150px] md:w-[150px] sm:w-[150px] xs:w-[150px] xxs:w-[150px] 2xl:h-full xl:h-full lg:h-full md:h-[150px] sm:h-[150px] xs:h-[150px] xxs:h-[150px]  text-[#fff] text-center flex flex-col items-center justify-center text-xl relative duration-200 group hover:bg-white hover:text-textColor cursor-pointer flex-none">
               <div className="flex flex-row gap-2">
                 <svg
                   className=" stroke-white fill-white group-hover:stroke-primaryColor group-hover:fill-primaryColor w-[24px] h-[24px]"
@@ -433,7 +437,7 @@ function Home() {
               <p className="2xl:text-md xl:text-md lg:text-md">Courses</p>
               <p className="text-sm underline pt-2">Learn More</p>
             </div>
-            <div className="2xl:w-[150px] xl:w-[150px] lg:w-[150px] md:w-[150px] sm:w-[150px] 2xl:h-full xl:h-full lg:h-full md:h-[150px] sm:h-[150px] text-primaryColor text-center flex flex-col items-center justify-center text-xl relative bg-white duration-200 group hover:bg-primaryColor  hover:text-white cursor-pointer flex-none">
+            <div className="2xl:w-[150px] xl:w-[150px] lg:w-[150px] md:w-[150px] sm:w-[150px] xs:w-[150px] xxs:w-[150px] 2xl:h-full xl:h-full lg:h-full md:h-[150px] sm:h-[150px] xs:h-[150px] xxs:h-[150px] text-primaryColor text-center flex flex-col items-center justify-center text-xl relative bg-white duration-200 group hover:bg-primaryColor  hover:text-white cursor-pointer flex-none">
               <div className="flex flex-row gap-2">
                 <svg
                   className=" fill-primaryColor group-hover:fill-white"
@@ -460,7 +464,7 @@ function Home() {
               <p className="2xl:text-md xl:text-md lg:text-md">Registerd</p>
               <p className="text-sm underline pt-2">Learn More</p>
             </div>
-            <div className="2xl:w-[150px] xl:w-[150px] lg:w-[150px] md:w-[150px] sm:w-[150px] 2xl:h-full xl:h-full lg:h-full md:h-[150px] sm:h-[150px] text-[#fff] text-center flex flex-col items-center justify-center text-xl relative duration-200 group hover:bg-white hover:text-textColor cursor-pointer flex-none">
+            <div className="2xl:w-[150px] xl:w-[150px] lg:w-[150px] md:w-[150px] sm:w-[150px] xs:w-[150px] xxs:w-[150px] 2xl:h-full xl:h-full lg:h-full md:h-[150px] sm:h-[150px] xs:h-[150px] xxs:h-[150px] text-[#fff] text-center flex flex-col items-center justify-center text-xl relative duration-200 group hover:bg-white hover:text-textColor cursor-pointer flex-none">
               <div className="flex flex-row gap-2">
                 <svg
                   className=" stroke-white fill-white group-hover:stroke-primaryColor group-hover:fill-primaryColor"
@@ -497,7 +501,7 @@ function Home() {
               <p className="2xl:text-md xl:text-md lg:text-md">Seats</p>
               <p className="text-sm underline pt-2">Learn More</p>
             </div>
-            <div className="2xl:w-[150px] xl:w-[150px] lg:w-[150px] md:w-[150px] sm:w-[150px] 2xl:h-full xl:h-full lg:h-full md:h-[150px] sm:h-[150px] text-primaryColor text-center flex flex-col items-center justify-center text-xl relative bg-white duration-200 group hover:bg-primaryColor  hover:text-white cursor-pointer flex-none">
+            <div className="2xl:w-[150px] xl:w-[150px] lg:w-[150px] md:w-[150px] sm:w-[150px] xs:w-[150px] xxs:w-[150px] 2xl:h-full xl:h-full lg:h-full md:h-[150px] sm:h-[150px] xs:h-[150px] xxs:h-[150px] text-primaryColor text-center flex flex-col items-center justify-center text-xl relative bg-white duration-200 group hover:bg-primaryColor  hover:text-white cursor-pointer flex-none">
               <div className="flex flex-row gap-2">
                 <svg
                   className=" fill-primaryColor group-hover:fill-white"
@@ -524,9 +528,9 @@ function Home() {
             </div>
           </div>
         </main>
-        <section className=" container mx-auto  flex 2xl:flex-row xl:flex-row lg:flex-row md:flex-col justify-center 2xl:items-center xl:items-center lg:items-center md:items-start flex-wrap 2xl:px-20 2xl:py-20 xl:px-16 xl:py-16 lg:px-14 lg:py-14 md:px-10 md:py-20 sm:px-5 sm:py-20 2xl:gap-y-20 xl:gap-y-20 lg:gap-y-20 md:gap-y-10 sm:gap-y-10">
+        <section className="container mx-auto flex 2xl:flex-row xl:flex-row lg:flex-row md:flex-col justify-center 2xl:items-center xl:items-center lg:items-center md:items-start flex-wrap 2xl:px-20 2xl:py-20 xl:px-16 xl:py-16 lg:px-14 lg:py-14 md:px-10 md:py-20 sm:px-5 xs:px-2 xxs:px-1 sm:py-20 xs:py-10 xxs:py-20 2xl:gap-y-20 xl:gap-y-20 lg:gap-y-20 md:gap-y-10 sm:gap-y-10 xs:gap-y-8 xxs:gap-y-6">
           <div className="2xl:w-[50%] xl:w-[50%] lg:w-[50%] md:w-full h-full ">
-            <p className="2xl:text-3xl xl:text-3xl lg:text-2xl md:text-3xl sm:text-2xl text-textColor ">
+            <p className="2xl:text-3xl xl:text-3xl lg:text-2xl md:text-3xl sm:text-2xl xs:text-2xl xxs:text-2xl text-textColor ">
               Welcome To A.I.M.S
             </p>
             <article className="py-4 px-6 2xl:text-md xl:text-sm lg:text-[12px] text-primaryColor">
@@ -544,7 +548,7 @@ function Home() {
               career in the healthcare sector.
             </article>
           </div>
-          <div className="2xl:w-[50%] xl:w-[50%] lg:w-[50%] md:w-full sm:w-full bg-[#edeade]  rounded-sm border border-primaryColor/40 flex flex-col items-center justify-center gap-y-2 text-textColor py-5">
+          <div className="2xl:w-[50%] xl:w-[50%] lg:w-[50%] md:w-full sm:w-full xs:w-full xxs:w-full bg-[#edeade]  rounded-sm border border-primaryColor/40 flex flex-col items-center justify-center gap-y-2 text-textColor py-5">
             <p>Registered By</p>
             <img
               className="w-24 h-24"
@@ -560,14 +564,24 @@ function Home() {
           </div>
         </section>
         <section className="bg-primaryColor">
-          <div className="container mx-auto p-10 flex 2xl:flex-row xl:flex-row lg:flex-row md:flex-col sm:flex-col justify-center items-center gap-10 ">
+          <div className="container mx-auto p-10 flex 2xl:flex-row xl:flex-row lg:flex-row md:flex-col sm:flex-col xs:flex-col xxs:flex-col justify-center items-center gap-10 ">
             <div className="2xl:w-[50%] xl:w-[50%] lg:w-[50%] md:w-full bg-white p-8 rounded-sm text-textColor">
               <p className="text-3xl">We Offer : </p>
               <p className="m-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-                nulla asperiores, beatae sunt sequi ratione incidunt. Incidunt
-                reiciendis accusamus autem, dolorem earum non excepturi
-                repellendus nostrum aspernatur molestias ratione? Magni.
+                Ayan Institue Institute of Medical Sciences (AIMS) is a leading
+                healthcare education center specializing in paramedical
+                training. The institute offers five comprehensive programs: Lab
+                Technician, Dispenser, Pharmacy Technician, Operation Theater
+                Technician, and Radiographic studies. AIMS features five
+                state-of-the-art laboratories equipped with modern medical
+                technology that provides students with hands-on training
+                experience. Each lab simulates real healthcare environments,
+                allowing students to develop practical skills alongside
+                theoretical knowledge. The institute's experienced faculty
+                ensures graduates are well-prepared for careers in hospitals,
+                clinics, and diagnostic centers. AIMS prides itself on its high
+                employment rate and continues to contribute significantly to
+                healthcare workforce development in the region.
               </p>
             </div>
             <div className="2xl:w-[50%] xl:w-[50%] lg:w-[50%] md:w-full flex flex-col gap-4">
@@ -600,14 +614,14 @@ function Home() {
           </div>
         </section>
         <section className="my-12">
-          <p className="text-center 2xl:text-5xl xl:text-5xl lg:text-4xl md:text-4xl sm:text-4xl font-bold text-textColor my-8">
+          <p className="text-center 2xl:text-5xl xl:text-5xl lg:text-4xl md:text-4xl sm:text-4xl xs:text-3xl xxs:text-3xl font-bold text-textColor my-8">
             Our Featured Courses
           </p>
           <div className="container mx-auto flex justify-center  gap-x-10 gap-y-10 flex-wrap flex-none p-3 place-items-center">
             {courses.map((course, index) => (
               <div
                 key={index}
-                className="relative shadow-2xl 2xl:w-[420px] xl:w-[380px] lg:w-[380px] md:w-[400px] cursor-pointer duration-700 hover:scale-105"
+                className="relative shadow-2xl 2xl:w-[420px] xl:w-[380px] lg:w-[380px] md:w-[400px]  xs:w-[420px] xxs::w-[320px] cursor-pointer duration-700 hover:scale-105"
               >
                 <div>
                   <img

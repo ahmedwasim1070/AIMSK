@@ -7,13 +7,13 @@ function Header({ smNav, setSmNav, smShNav, setSmShNav }) {
         <div className="w-[50%] h-full flex flex-row items-center gap-4">
           <div className="flex-none">
             <img
-              className="2xl:w-[100px] 2xl:h-[100px] xl:w-[90px] xl:h-[90px] lg:w-[90px] lg:h-[90px] md:w-[80px] md:h-[80px] sm:w-[80px] sm:h-[80px] xs:w-[70px] xs:h-[70px]"
+              className="2xl:w-[100px] 2xl:h-[100px] xl:w-[90px] xl:h-[90px] lg:w-[90px] lg:h-[90px] md:w-[80px] md:h-[80px] sm:w-[80px] sm:h-[80px] xs:w-[70px] xs:h-[70px] xxs:w-[70px] xxs:h-[70px]"
               src="./AIMS-Kabirwala-logo.svg"
               alt="AIMS Logo"
             />
           </div>
           <div>
-            <h1 className="text-textColor 2xl:text-3xl xl:text-2xl lg:text-2xl md:text-2xl sm:text-2xl xs:text-xl text-nowrap">
+            <h1 className="text-textColor 2xl:text-3xl xl:text-2xl lg:text-2xl md:text-2xl sm:text-2xl xs:text-xl xxs:text-xl text-nowrap">
               {smNav
                 ? "Ayan Intitute Of Medical Sceinces Kabirwala"
                 : "A . I . M . S"}
@@ -22,8 +22,8 @@ function Header({ smNav, setSmNav, smShNav, setSmShNav }) {
         </div>
         <div className="w-[50%] h-full flex flex-row items-center gap-x-5 justify-end">
           <a
-            className="flex flex-row items-center bg-primaryColor 2xl:py-3 xl:py-2 2xl:px-6 xl:px-5 lg:px-5 lg:py-2 md:px-5 md:py-2.5 sm:px-6 sm:py-3 xs:px-4 xs:py-2 rounded-sm duration-200 gap-2 group text-white hover:bg-white hover:border hover:border-primaryColor hover:text-textColor"
-            href=""
+            className="2xl:flex xl:flex lg:flex md:flex sm:flex xs:flex xxs:hidden flex-row items-center bg-primaryColor 2xl:py-3 xl:py-2 2xl:px-6 xl:px-5 lg:px-5 lg:py-2 md:px-5 md:py-2.5 sm:px-6 sm:py-3 xs:px-4 xs:py-2  rounded-sm duration-200 gap-2 group text-white hover:bg-white hover:border hover:border-primaryColor hover:text-textColor"
+            href="tel:+923009279148"
           >
             <p className="font-bold 2xl:text-2xl xl:text-2xl lg:text-2xl md:text-xl sm:text-xl xs:text-lg">
               Call Us
