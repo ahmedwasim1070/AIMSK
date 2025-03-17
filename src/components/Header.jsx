@@ -1,15 +1,15 @@
-import aimskLogo from "../assets/svg/AIMS-Kabirwala-logo.svg";
+import aimskLogo from "../assets/svg/aimsk-logo.svg";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 
 const Header = ({ showNav, setShowNav }) => {
   return (
     <>
-      <div className="h-[120px]  flex flex-row justify-between items-center">
+      <div className="h-[120px] sticky top-0 z-50 bg-white flex flex-row justify-between items-center">
         <div className="flex flex-row gap-x-5 pl-4">
           <span>
             <img
               className="w-[65px] h-[85px]"
-              src={`${aimskLogo}`}
+              src={aimskLogo}
               alt="Ayan Intitute Of Medical Sciences Kabriwala Logo"
             />
           </span>

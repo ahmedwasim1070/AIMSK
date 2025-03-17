@@ -1,36 +1,37 @@
-import React from "react";
-
 const SocialNav = () => {
+  const socialLinks = [
+    { Icon: FacebookIcon, color: "#1877F2", noColor: "", link: "#" },
+    { Icon: WhatsAppIcon, color: "#25D366", noColor: "", link: "#" },
+    { Icon: EmailIcon, color: "#FF0000", noColor: "", link: "#" },
+    { Icon: CallIcon, color: "#187772", noColor: "", link: "#" },
+  ];
+
   return (
-    <>
-      <nav>
-        <ul className="flex flex-row gap-x-5 ">
-          <li>
-            <a href="#">
-              <FacebookIcon className="w-6 fill-white" />
+    <nav>
+      <ul className="flex flex-row sm:gap-x-10 xxs:gap-x-4 my-5">
+        {socialLinks.map(({ Icon, color, noColor, link }, index) => (
+          <li
+            key={index}
+            className={`border xl:p-4 xxs:p-3 flex items-center justify-center rounded-full group duration-300 hover:border-primaryColor `}
+            style={{ backgroundColor: noColor }}
+            onMouseEnter={(e) =>
+              (e.currentTarget.style.backgroundColor = color)
+            }
+            onMouseLeave={(e) =>
+              (e.currentTarget.style.backgroundColor = noColor)
+            }
+          >
+            <a href={link}>
+              <Icon className="w-6 fill-white group-hover:fill-black" />
             </a>
           </li>
-          <li>
-            <a href="#">
-              <WhatsAppIcon className="w-6 fill-white" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <CallIcon className="w-6 fill-white" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <EmailIcon className="w-6 fill-white" />
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </>
+        ))}
+      </ul>
+    </nav>
   );
 };
 
+// Icons
 const FacebookIcon = (props) => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="-5 0 20 20" {...props}>

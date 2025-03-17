@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { PhoneIcon,MapPinIcon } from "@heroicons/react/24/solid";
+import { PhoneIcon, MapPinIcon } from "@heroicons/react/24/solid";
 
 const Hero = () => {
   const [isSm, setIsSm] = useState(false);
@@ -19,7 +19,7 @@ const Hero = () => {
   }, []);
   return (
     <>
-      <div>
+      <section>
         <div className="relative">
           <img
             className="w-full h-[800px] "
@@ -34,15 +34,17 @@ const Hero = () => {
                 </h2>
               </div>
               <div className="md:px-30 sm:px-20 sm:flex xxs:hidden mx-2 py-4 bg-primaryColor text-white flex flex-col gap-y-1 rounded-sm shadow-2xl">
-                <div className="flex flex-row gap-x-5 justify-center">
-                  <p className=" text-center md:text-nowrap xxs:text-wrap">
+                <div className="flex flex-row gap-x-5 items-center justify-center">
+                  <MapPinIcon className="size-6" />
+                  <h3 className=" text-center md:text-nowrap xxs:text-wrap">
                     Near New Buss Sand , Main Street, Jameel Colony , Kabirwala
-                  </p>
+                  </h3>
                 </div>
-                <div className="flex flex-row gap-x-5 justify-center">
-                  <p className=" text-center">
+                <div className="flex flex-row gap-x-5 justify-center items-center">
+                  <PhoneIcon className="size-5" />
+                  <h3 className=" text-center">
                     0300-9279148 / 0300-7050624 / 0333-3202043
-                  </p>
+                  </h3>
                 </div>
               </div>
             </div>
@@ -50,13 +52,13 @@ const Hero = () => {
               <div className="md:w-[40%] xs:w-[80%] xxs:w-[95%] mx-auto flex flex-row justify-between items-center">
                 <div>
                   <button className="px-5 py-3 border border-white rounded-sm flex flex-row gap-x-3 items-center text-white cursor-pointer duration-100 group hover:bg-primaryColor ">
-                    <PhoneIcon className="size-6"/>
+                    <PhoneIcon className="size-6" />
                     <p className="text-xl">Call Us</p>
                   </button>
                 </div>
                 <div>
                   <button className="px-5 py-3 border border-white rounded-sm flex flex-row gap-x-3 items-center text-white cursor-pointer duration-100 group hover:bg-primaryColor">
-                    <MapPinIcon className="size-6"/>
+                    <MapPinIcon className="size-6" />
                     <p className="text-xl">Find Us</p>
                   </button>
                 </div>
@@ -65,35 +67,39 @@ const Hero = () => {
                 {isSm ? (
                   <div className="flex flex-col gap-y-3 pt-2">
                     <div className="flex flex-row justify-center items-center gap-x-3">
-                      <p className="text-center">
+                      <MapPinIcon className="size-4" />
+                      <h3 className="text-center">
                         Near New Buss Sand , Main Street, Jameel Colony ,
                         Kabirwala
-                      </p>
+                      </h3>
                     </div>
                     <div className="flex flex-row justify-center items-center gap-x-3">
-                      <p className=" text-center">
+                      <PhoneIcon className="size-4" />
+                      <h3 className=" text-center">
                         0300-9279148 / 0300-7050624 / 0333-3202043
-                      </p>
+                      </h3>
                     </div>
                   </div>
                 ) : (
-                  <p>
-                    is a reputable college that offers certificates, and
-                    specialized courses in B-Category, Theater (O.T.), and other
-                    medical fields for both girls and The institute is
-                    officially registered with the Punjab Council, Lahore,
-                    ensuring that all programs meet the professional and
-                    educational standards. With a focus high-quality medical
-                    education, Ayan Institute aims to students with the skills
-                    and knowledge needed for a successful career in the
-                    healthcare sector.
-                  </p>
+                  <aside>
+                    <h3 className="font-bold">
+                      Ayan Institute of Medical Sciences Kabirwala ,
+                    </h3>
+                    <p>
+                      is a registered pharmacy college offering diverse pharmacy
+                      courses. Recognized by the{" "}
+                      <strong>Punjab Pharmacy Council</strong> and{" "}
+                      <strong>Punjab Medical Faculty</strong> since 2021, we
+                      provide quality education for a successful career in
+                      healthcare.
+                    </p>
+                  </aside>
                 )}
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

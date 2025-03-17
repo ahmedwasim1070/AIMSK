@@ -5,10 +5,19 @@
   --color-textColor: #841518;
   --color-primaryColor: #5f1e1e;
   --color-lightPrimary: #6d2323;
-  --color-secondaryColor: #15a84f;
+  --color-secondaryColor: #a2cd3a;
   /* Custom Screen's */
   --breakpoint-xs: 24rem;
   --breakpoint-xxs: 16rem;
   /* Custom Fonts */
   --font-gfsDidot: "GFS-Didot";
+}
+.slider {
+  overflow-x: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+.slider::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
 }

@@ -1,55 +1,45 @@
 {
   "contents": [
-    "Home",
-    "Courses",
-    "Fee-Structure",
-    "About"
+    { "content": "Home", "link": "/" },
+    { "content": "Fee-Structure", "link": "/fee-structure" },
+    { "content": "Courses", "link": "/courses" },
+    { "content": "About", "link": "/about" }
+  ],
+  "secondaryNav": [
+    { "content": "Feedback", "link": "#" },
+    { "content": "Report-Issue", "link": "#" },
+    { "content": "Admin-Portal", "link": "#" }
   ],
   "courses": [
     {
       "courseImg": "AIMs-Kabirwala-C01.webp",
       "courseImgAlt": "Lab Technician",
       "courseName": "Lab Technician",
-      "courseDescription": "A Lab Technician course focuses on medical laboratory procedures and diagnostic testing. Students learn about hematology, microbiology, biochemistry, and pathology, gaining the skills to analyze samples and assist doctors in diagnosing diseases. Lab technicians play a crucial role in healthcare and can work in hospitals, diagnostic labs, and research facilities.",
-      "coursePosition": "0%",
-      "courseScale": "85",
-      "courseZ": "0"
+      "courseDescription": "The Lab Technician course trains students in medical laboratory testing, sample collection, and disease diagnosis, preparing them for roles in hospitals and diagnostic labs. "
     },
     {
       "courseImg": "AIMs-Kabirwala-C02.webp",
       "courseImgAlt": "Dispenser",
       "courseName": "Dispenser",
-      "courseDescription": "The Dispenser course trains students in handling, storing, and dispensing medicines under a pharmacist's supervision. It covers pharmaceutical calculations, drug interactions, and basic patient counseling. Dispensers are responsible for managing prescriptions and ensuring accurate medication distribution. Graduates of this course can work in pharmacies, hospitals, and healthcare centers.",
-      "coursePosition": "20%",
-      "courseScale": "100",
-      "courseZ": "0"
+      "courseDescription": "The Dispenser program focuses on pharmaceutical dispensing, medication preparation, and assisting pharmacists in pharmacies and healthcare facilities."
     },
     {
       "courseImg": "AIMs-Kabirwala-C03.webp",
       "courseImgAlt": "Pharmacy Technician , B-Category",
       "courseName": "Pharmacy Technician",
-      "courseDescription": "A Pharmacy Technician course provides more in-depth training in pharmaceutical sciences, drug formulations, and medication safety. Pharmacy technicians assist pharmacists by preparing prescriptions, managing inventory, and ensuring patients receive the correct medications. They play a vital role in both hospital and retail pharmacy settings.",
-      "coursePosition": "40%",
-      "courseScale": "110",
-      "courseZ": "10"
+      "courseDescription": "Pharmacy Technicians learn about drug preparation, inventory management, and patient counseling to support pharmacists."
     },
     {
       "courseImg": "AIMs-Kabirwala-C04.webp",
       "courseImgAlt": "Operation Therater Technician",
       "courseName": "Operation Theater Technician",
-      "courseDescription": "The Operation Theater Technician course focuses on preparing and maintaining operation theaters, sterilizing surgical instruments, and assisting surgeons during medical procedures. Students learn about anesthesia basics, surgical protocols, and emergency handling. OT technicians work in hospitals and surgical centers, ensuring that operating rooms function smoothly.",
-      "coursePosition": "60%",
-      "courseScale": "100",
-      "courseZ": "0"
+      "courseDescription": "The Operation Theater (OT) Technician course covers surgical assistance, sterilization techniques, and patient care during operations."
     },
     {
       "courseImg": "AIMs-Kabirwala-C05.webp",
       "courseImgAlt": "Radiographic",
       "courseName": "Radiographic",
-      "courseDescription": "A Radiographic course trains students in using medical imaging technologies such as X-rays, MRI, and CT scans. It emphasizes radiation safety, image processing, and patient positioning, enabling graduates to assist radiologists in diagnosing diseases. Radiology technicians typically work in hospitals, diagnostic imaging centers, and specialized radiology departments.",
-      "coursePosition": "80%",
-      "courseScale": "85",
-      "courseZ": "0"
+      "courseDescription": "Radiographic Technician program teaches medical imaging techniqueslike X-rays and CT scans, helping doctors diagnose diseases effectively."
     }
   ]
 }
