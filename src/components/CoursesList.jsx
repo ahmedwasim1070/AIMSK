@@ -2,14 +2,13 @@ import data from "../assets/data/data.json";
 const CoursesList = () => {
   return (
     <>
-      <hr className="container mx-auto border-2 border-primaryColor rounded-full my-20" />
       <section className="container mx-auto flex justify-center items-center flex-wrap gap-x-10 gap-y-5 text-center">
         {data.courses.map(
           (
             { courseName, courseImg, courseDescription, courseImgAlt },
             index
           ) => (
-            <div key={index} className="w-[450px] flex flex-col justify-center item-center pb-4 shadow-2xl flex-none">
+            <div key={index} className="sm:w-[450px] xxs:w-[100%] flex flex-col justify-center item-center pb-4 shadow-2xl flex-none">
               <img
                 className="h-[250px] rounded-sm"
                 src={`/assets/images/${courseImg}`}
@@ -31,7 +30,6 @@ const CoursesList = () => {
           )
         )}
       </section>
-      <hr className="container mx-auto border-2 border-primaryColor rounded-full my-20" />
     </>
   );
 };

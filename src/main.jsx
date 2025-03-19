@@ -5,6 +5,7 @@ import "./index.css";
 import Layout from "./Layout";
 import HomePage from "./pages/HomePage";
 import CoursePage from "./pages/CoursesPage";
+import FeeStructurePage from "./pages/FeeStructurePage";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -13,6 +14,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
           <Route path="courses" element={<CoursePage />} />
+          <Route path="fee-structure" element={<FeeStructurePage />} />
         </Route>
       </Routes>
     </Router>
