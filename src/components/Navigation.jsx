@@ -9,7 +9,7 @@ import {
 } from "@heroicons/react/24/solid";
 import data from "../assets/data/data.json";
 
-const Navigation = () => {
+const Navigation = ({ setShowNav}) => {
   const navIcons = [
     <HomeIcon className="size-[4vh]" />,
     <CurrencyDollarIcon className="size-[4vh]" />,
@@ -20,13 +20,13 @@ const Navigation = () => {
   return (
     <>
       <div className=" w-full h-full bg-primaryColor flex flex-col justify-between items-center gap-y-[5vh] text-white py-[3vh]">
-        <div className="flex flex-row justify-center items-center gap-x-4">
+        <div className="flex flex-row justify-center items-center gap-x-[3vh]">
           <img
             className="w-[9vh] "
             src={aimskLogo}
             alt="Ayan Intitue of Medical Sceinces Kabirwala Logo"
           />
-          <h1 className="text-[3vh]">
+          <h1 className="text-[3vh] text-center">
             Ayan Intitute Of Medical Sciences Kabirwala
           </h1>
         </div>
@@ -37,6 +37,7 @@ const Navigation = () => {
                 <hr />
                 <li key={index} className=" py-[2vh] mx-[4vh]">
                   <Link
+                    onClick={()=>setShowNav(false)}
                     className="flex flex-row justify-between item-center hover:bg-textColor "
                     to={link}
                   >
@@ -55,6 +56,7 @@ const Navigation = () => {
               {data.secondaryNav.map(({ content, link }, index) => (
                 <li key={index}>
                   <Link
+                    onClick={()=>setShowNav(false)}
                     className="underline text-[2vh] hover:text-secondaryColor"
                     to={link}
                   >

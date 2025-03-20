@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import data from "../assets/data/data.json";
 
 const CourseSlider = () => {
@@ -45,12 +46,12 @@ const CourseSlider = () => {
               and industry-relevant knowledge, we prepare students for roles in
               hospitals, pharmacies, diagnostic labs, and healthcare facilities.
             </p>
-            <a
-              className="  bg-white text-textColor px-5 py-2 rounded-lg text-lg"
-              href="#"
+            <Link
+              className="  bg-white text-textColor px-5 py-2 border rounded-lg text-lg hover:bg-primaryColor hover:text-white "
+              to='/fee-structure'
             >
               Fee Structure
-            </a>
+            </Link>
           </aside>
         </div>
         {/* Slider Container */}
@@ -79,12 +80,12 @@ const CourseSlider = () => {
                   </h4>
                   <p className="py-5 px-4 text-textColor">{courseDescription}</p>
                   <div className="py-2">
-                    <a
-                      href="#"
+                    <Link
+                      to="/fee-structure"
                       className="text-white py-3 px-5 rounded-sm bg-primaryColor text-lg duration-100 cursor-pointer border border-primaryColor hover:bg-white hover:text-textColor"
                     >
                       Fee Structure & Eligibility
-                    </a>
+                    </Link>
                   </div>
                 </div>
               )

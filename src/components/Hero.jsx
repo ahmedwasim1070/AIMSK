@@ -51,16 +51,22 @@ const Hero = () => {
             <div className="h-[30%] bg-linear-to-b from-[#3D1313]/30 to-[#5F1E1E]/100 py-8 flex flex-col gap-y-6 ">
               <div className="md:w-[40%] xs:w-[80%] xxs:w-[95%] mx-auto flex flex-row justify-between items-center">
                 <div>
-                  <button className="px-5 py-3 border border-white rounded-sm flex flex-row gap-x-3 items-center text-white cursor-pointer duration-100 group hover:bg-primaryColor ">
+                  <a
+                    href="tel:+923009279148"
+                    className="px-5 py-3 border border-white rounded-sm flex flex-row gap-x-3 items-center text-white cursor-pointer duration-100 group hover:bg-primaryColor "
+                  >
                     <PhoneIcon className="size-6" />
                     <p className="text-xl">Call Us</p>
-                  </button>
+                  </a>
                 </div>
                 <div>
-                  <button className="px-5 py-3 border border-white rounded-sm flex flex-row gap-x-3 items-center text-white cursor-pointer duration-100 group hover:bg-primaryColor">
+                  <a
+                    href="https://www.google.com/maps/place/Ayan+Institute+Of+Medical+Sciences+Kabirwala/@30.3987338,71.8630291,17z/data=!3m1!4b1!4m9!1m2!10m1!1e1!3m5!1s0x3924abbc50843223:0x442e3e18c34f5407!8m2!3d30.3987292!4d71.865604!16s%2Fg%2F11rcmnxkjf?entry=ttu&g_ep=EgoyMDI1MDMxNy4wIKXMDSoASAFQAw%3D%3D"
+                    className="px-5 py-3 border border-white rounded-sm flex flex-row gap-x-3 items-center text-white cursor-pointer duration-100 group hover:bg-primaryColor"
+                  >
                     <MapPinIcon className="size-6" />
                     <p className="text-xl">Find Us</p>
-                  </button>
+                  </a>
                 </div>
               </div>
               <div className="sm:w-[70%] xxs:w-[80%] mx-auto text-center text-white">

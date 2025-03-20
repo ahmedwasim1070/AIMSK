@@ -1,9 +1,24 @@
 const SocialNav = () => {
   const socialLinks = [
-    { Icon: FacebookIcon, color: "#1877F2", noColor: "", link: "#" },
-    { Icon: WhatsAppIcon, color: "#25D366", noColor: "", link: "#" },
-    { Icon: EmailIcon, color: "#FF0000", noColor: "", link: "#" },
-    { Icon: CallIcon, color: "#187772", noColor: "", link: "#" },
+    {
+      Icon: FacebookIcon,
+      color: "#1877F2",
+      noColor: "",
+      link: "https://www.facebook.com/aimskabirwala/about",
+    },
+    {
+      Icon: WhatsAppIcon,
+      color: "#25D366",
+      noColor: "",
+      link: "https://wa.me/923009279148",
+    },
+    { Icon: EmailIcon, color: "#FF0000", noColor: "", link: "mailto:aimskabirwala@gmail.com" },
+    {
+      Icon: CallIcon,
+      color: "#187772",
+      noColor: "",
+      link: "tel+923009279148",
+    },
   ];
 
   return (

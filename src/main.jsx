@@ -6,6 +6,7 @@ import Layout from "./Layout";
 import HomePage from "./pages/HomePage";
 import CoursePage from "./pages/CoursesPage";
 import FeeStructurePage from "./pages/FeeStructurePage";
+import AboutPage from "./pages/AboutPage";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -15,6 +16,7 @@ createRoot(document.getElementById("root")).render(
           <Route index element={<HomePage />} />
           <Route path="courses" element={<CoursePage />} />
           <Route path="fee-structure" element={<FeeStructurePage />} />
+          <Route path="about" element={<AboutPage />} />
         </Route>
       </Routes>
     </Router>

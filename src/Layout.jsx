@@ -20,7 +20,7 @@ export default function Layout() {
             showNav ? "right-0" : "xl:right-[-60%] xxs:right-[-100%]"
           }`}
         >
-          <Navigation />
+          <Navigation setShowNav={setShowNav} />
         </div>
         {/* Main Content */}
         <main

@@ -46,33 +46,76 @@
   "coursesFees": [
     {
       "courseName": "Lab Technician",
-      "courseAdmissionFee": "10,000",
+      "courseAdmissionFee": "5,000",
       "courseMonthlyFee": "5,000",
       "totalFee": "100,000"
     },
     {
       "courseName": "Dispenser",
-      "courseAdmissionFee": "10,000",
+      "courseAdmissionFee": "5,000",
       "courseMonthlyFee": "5,000",
       "totalFee": "100,000"
     },
     {
       "courseName": "Pharmacy Technician (B-Category)",
-      "courseAdmissionFee": "10,000",
+      "courseAdmissionFee": "5,000",
       "courseMonthlyFee": "5,000",
       "totalFee": "100,000"
     },
     {
       "courseName": "Operation Therater Technician",
-      "courseAdmissionFee": "10,000",
+      "courseAdmissionFee": "5,000",
       "courseMonthlyFee": "5,000",
       "totalFee": "100,000"
     },
     {
       "courseName": "Radiographic",
-      "courseAdmissionFee": "10,000",
+      "courseAdmissionFee": "5,000",
       "courseMonthlyFee": "5,000",
       "totalFee": "100,000"
+    }
+  ],
+  "thCourseReqContents": ["Course Name", "Degree", "Subjects"],
+  "courseReq": [
+    {
+      "courseName": "Lab Technician",
+      "degree": "Matric",
+      "subject": "Physics,Math,Chemistry(60% Plus Marks Required in Each Subject)"
+    },
+    {
+      "courseName": "Dispenser",
+      "degree": "Matric",
+      "subject": "Physics,Math,Chemistry(60% Plus Marks Required in Each Subject)"
+    },
+    {
+      "courseName": "Pharmacy Technician (B-Category)",
+      "degree": "Matric",
+      "subject": "Physics,Math,Chemistry(60% Plus Marks Required in Each Subject)"
+    },
+    {
+      "courseName": "Operation Therater Technician",
+      "degree": "Matric",
+      "subject": "Physics,Math,Chemistry(60% Plus Marks Required in Each Subject)"
+    },
+    {
+      "courseName": "Radiographic",
+      "degree": "Matric",
+      "subject": "Physics,Math,Chemistry(60% Plus Marks Required in Each Subject)"
+    }
+  ],
+  "thDocReqContents": ["Documents Name","Number Of Copies"],
+  "docReq":[
+    {
+      "docName": "National ID Card",
+      "numbOf": "2"
+    },
+    {
+      "docName": "Matric Certificate",
+      "numbOf": "2"
+    },
+    {
+      "docName": "Father's National ID Card",
+      "numbOf": "2"
     }
   ]
 }
