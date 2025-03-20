@@ -54,7 +54,7 @@ const Footer = () => {
               </div>
               <div className="flex flex-row gap-x-2 items-center">
                 <EnvelopeIcon className="size-5 fill-secondaryColor" />
-                <h6>aimskabirwala@gmail.com</h6>
+                <h6>aimskabirwala50@gmail.com</h6>
               </div>
             </div>
           </div>

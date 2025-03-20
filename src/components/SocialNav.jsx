@@ -12,7 +12,7 @@ const SocialNav = () => {
       noColor: "",
       link: "https://wa.me/923009279148",
     },
-    { Icon: EmailIcon, color: "#FF0000", noColor: "", link: "mailto:aimskabirwala@gmail.com" },
+    { Icon: EmailIcon, color: "#FF0000", noColor: "", link: "mailto:aimskabirwala50@gmail.com" },
     {
       Icon: CallIcon,
       color: "#187772",
